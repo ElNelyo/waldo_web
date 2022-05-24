@@ -12,7 +12,7 @@ const growthFeatures = [
 export default function Genesis() {
   return (
       <div>
- <div className="bg-gradient-to-r from-cyan-500 to-blue-500 ">
+ <div className="bg-gradient-to-r from-cyan-500 to-blue-500 " id='genesis'>
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <h2 className="text-lg leading-6 pacifico font-semibold text-gray-100 uppercase tracking-wider">What are the rarities ?</h2>

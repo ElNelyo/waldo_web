@@ -10,6 +10,7 @@ import DAO from './components/DAO';
 import Utility from './components/Utility';
 import Distribution from './components/Distribution';
 import Team from './components/Team';
+import Next from './components/Next';
 
 const App = () => (
   <div className="flex min-h-screen flex-col justify-center bg-gray-100">
@@ -23,6 +24,7 @@ const App = () => (
     <Utility />
     <Distribution />
     <Team />
+    <Next />
     <Footer />
   </div>
 );

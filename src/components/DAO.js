@@ -83,7 +83,7 @@ function classNames(...classes) {
 
 export default function DAO() {
   return (
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500  ">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500  " id='DAO'>
       <main className="lg:relative">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">

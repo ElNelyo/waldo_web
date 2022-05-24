@@ -28,7 +28,7 @@ const features = [
 
 export default function Utility() {
   return (
-    <div className="py-12 bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="py-12 bg-gradient-to-r from-cyan-500 to-blue-500" id='utility'> 
     <Zoom>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">

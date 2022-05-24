@@ -1,7 +1,12 @@
 .pacifico{
     font-family: 'Pacifico', cursive;
 }
-
+.indie{
+  font-family: 'Indie Flower', cursive;
+}
+p, h1, dd {
+  font-family: 'Indie Flower', cursive;
+}
 #pot {
    
     position: absolute;
