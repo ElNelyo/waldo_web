@@ -1,0 +1,32 @@
+.pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
+#pot {
+   
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 20s;
+  }
+
+  @-webkit-keyframes run {
+    0% {
+      right: 0;
+    }
+    48% {
+      -webkit-transform: rotateY(0deg); 
+    }
+    50% { 
+      right: calc(80%);
+      -webkit-transform: rotateY(180deg); 
+    }
+    98% {
+      -webkit-transform: rotateY(180deg); 
+    }
+    100% {
+      right: 0;    
+       -webkit-transform: rotateY(0deg);
+    }
+  }
+

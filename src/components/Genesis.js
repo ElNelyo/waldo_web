@@ -53,7 +53,7 @@ export default function Genesis() {
                             <div className="flex-shrink-0">
                               <CheckIcon className="flex-shrink-0 h-6 w-6 text-orange-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-gray-100">{feature}</p>
+                            <p className="ml-3 text-base font-medium text-white">{feature}</p>
                           </li>
                         ))}
                       </ul>
@@ -67,7 +67,7 @@ export default function Genesis() {
               <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
                 <div className="relative z-10 rounded-lg shadow-xl">
                   <div
-                    className="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600"
+                    className="pointer-events-none absolute inset-0 rounded-2xl"
                     aria-hidden="true"
                   />
                   <div className="bg-green-400 rounded-t-lg px-6 pt-12 pb-10">
@@ -90,7 +90,7 @@ export default function Genesis() {
                           <div className="flex-shrink-0">
                             <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
                           </div>
-                          <p className="ml-3 text-base font-medium text-gray-100">{feature}</p>
+                          <p className="ml-3 text-base font-medium text-white">{feature}</p>
                         </li>
                       ))}
                     </ul>
@@ -125,7 +125,7 @@ export default function Genesis() {
                             <div className="flex-shrink-0">
                               <CheckIcon className="flex-shrink-0 h-6 w-6 text-pink-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-gray-100">{feature}</p>
+                            <p className="ml-3 text-base font-medium text-white">{feature}</p>
                           </li>
                         ))}
                       </ul>

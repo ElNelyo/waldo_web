@@ -1,11 +1,24 @@
 import React from 'react';
 import banniere from '../images/banniere.png';
-import project from '../images/project.png';
+import plane from '../images/plane_small.png';
 import end_banner from '../images/end_banner.png';
 
 const HeaderBanner = () => (
   <div className="">
-    <img src={banniere} alt="banniere" className='h-16' />
+
+
+
+    <div className='relative mb-40'>
+      <img src={banniere} alt="banniere" className='w-full absolute ' />
+      <div id="pot">
+      <img  src={plane} alt="banniere" className='w-full hidden sm:block mt-72 ' />
+      </div>
+ 
+
+   
+    </div>
+ 
+
     <div>
         The Waldos Legend: What is it?!
     </div>
@@ -23,7 +36,6 @@ const HeaderBanner = () => (
     <div>Thus, we offer Waldos access to truly exclusive advantages through this crazy project!</div>
     <div>To do so, the TWL team already has all the cards in hand to satisfy the Waldos: the best supplier of flowers and CBD-derived products in Europe is already our trusted partner, ready to provide the best qualities. of the world to the Waldos to encourage them to find this treasure.</div>
     <div> But before you run into the metaverse to get your hands on the One Piece of the Waldos, please read up on all aspects of THE WALDOS LEGEND!</div>
-
 
 
   </div>
