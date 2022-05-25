@@ -64,7 +64,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-base text-white">&copy; 2022 WALDOS LEGENDS, Inc. All rights reserved.</p>
+          <p className="mt-8 text-center text-base text-white">&copy; 2022 WALDOS LEGENDS - powered by UNIWAVE-STUDIO</p>
         </div>
       </footer>
     )
