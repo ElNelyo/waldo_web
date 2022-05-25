@@ -10,7 +10,7 @@ const Distribution = () => (
       </div>
       </Zoom>
       <Zoom>
-      <div className='text-white text-center mx-auto mb-12 indie'>We want to have a policy of transparency with the community. You can find a pie chart detailing the distribution of funds raised from the sale of the NFT collection.</div>
+      <div className='text-white text-2xl text-center mx-auto mb-12 indie'>We want to have a policy of transparency with the community. You can find a pie chart detailing the distribution of funds raised from the sale of the NFT collection.</div>
       </Zoom>
       <Zoom>
       <img src={distribution} alt="distribution" className='w-1/2 mx-auto rounded-3xl shadow-xl mb-20'  />

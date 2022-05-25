@@ -45,9 +45,9 @@ export default function Utility() {
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-700 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-white">{feature.name}</p>
+                  <p className="ml-16 text-4xl leading-6 font-medium text-orange-800">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-200">{feature.description}</dd>
+                <dd className="mt-4 ml-16 text-2xl text-white">{feature.description}</dd>
               </div>
             ))}
           </dl>

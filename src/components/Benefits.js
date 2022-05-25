@@ -21,7 +21,7 @@ export default function Benefits() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
                   CBD PRODUCT
                 </h2>
-                <div className="mt-4 text-lg text-gray-100">
+                <div className="mt-4 text-2xl text-white indie">
                 The Waldos will have exclusive access to the Waldos Shop: On the menu, varieties of high quality CBD products, tested and approved by the team to satisfy all desires.
                     
                     <ul className='mx-4 my-2'>
@@ -72,7 +72,7 @@ export default function Benefits() {
               <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
                 IRL Events
                 </h2>
-                <p className="mt-4 text-lg text-gray-100">
+                <p className="mt-4 text-2xl text-white">
                 THE WALDOS LEGEND, in addition to being in partnership with the best CBD producer in Europe, provides for Waldos IRL advantages with other areas:
 
                 <ul>

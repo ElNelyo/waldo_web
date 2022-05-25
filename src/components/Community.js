@@ -32,8 +32,8 @@ const posts = [
             {posts.map((post) => (
               <Zoom>
               <div key={post.title}>
-                  <p className="text-2xl font-semibold text-green-500 pacifico">{post.title}</p>
-                  <p className="mt-3 text-base text-gray-100">{post.description}</p>
+                  <p className="text-4xl font-semibold text-green-500 pacifico">{post.title}</p>
+                  <p className="mt-3 text-2xl text-white">{post.description}</p>
               </div>
               </Zoom>
             ))}

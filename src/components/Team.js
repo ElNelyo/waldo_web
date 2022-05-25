@@ -53,7 +53,7 @@ const people = [
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl pacifico text-orange-500">Team</h2>
               </Zoom>
               <Zoom>
-                <p className="text-xl text-white">
+                <p className="text-3xl text-white">
                 Our team is a group of friends who each have great skills to give birth to THE WALDOS LEGEND.
                 </p>
                 </Zoom>
@@ -72,10 +72,10 @@ const people = [
                       </div>
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3 className='text-2xl pacifico text-indigo-700 mb-2'>{person.name}</h3>
-                        <p className="text-indigo-800">{person.role}</p>
+                        <p className="text-indigo-800 text-4xl font-bold">{person.role}</p>
                       </div>
                       <div className="text-lg">
-                        <p className="text-gray-100">{person.bio}</p>
+                        <p className="text-white text-2xl">{person.bio}</p>
                       </div>
   
                       <ul role="list" className="flex space-x-5">

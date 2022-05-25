@@ -93,8 +93,8 @@ export default function DAO() {
               <span className="block xl:inline">Waldos </span>{' '}
               <span className="block text-orange-400 xl:inline">DAO</span>
             </h1>
-            <div className="mt-3 max-w-md mx-auto text-lg text-gray-100 sm:text-xl md:mt-5 md:max-w-3xl">
-            <p className="mt-3 max-w-md mx-auto text-lg text-gray-100 sm:text-xl md:mt-5 md:max-w-3xl">
+            <div className="mt-3 max-w-md mx-auto text-2xl text-white sm:text-xl md:mt-5 md:max-w-3xl">
+            <p className="mt-3 max-w-md mx-auto text-2xl text-white sm:text-xl md:mt-5 md:max-w-3xl">
             The involvement of the Waldos is very important: being the holder of a Waldos will allow its owner to be able to give his opinion and influence the direction of THE WALDOS LEGEND project.</p>
             <p className='mt-3'>The Waldos will be able to decide on the desired events for partnerships, collaborations. They will be able to decide on future projects: play 2 earn, second NFT collection, choice of variety of products for the community, etc.</p>
             <p className='mt-3'> In short, be ambitious, original and we will make the community a real strength!</p>

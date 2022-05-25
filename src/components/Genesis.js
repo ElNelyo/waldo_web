@@ -21,7 +21,7 @@ export default function Genesis() {
             <p className="mt-2 text-3xl text-green-500 font-extrabold text-white sm:text-4xl lg:text-5xl pacifico">
               GENESIS COLLECTION
             </p>
-            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-100 sm:mt-5 sm:text-2xl">
+            <p className="mt-3 max-w-4xl mx-auto text-xl text-white sm:mt-5 sm:text-2xl">
             The collection consists of 4200 NFTs. 4200 unique and super cool Waldos that from the first level of rarity will provide amazing benefits !
             </p>
             </Zoom>
@@ -44,7 +44,7 @@ export default function Genesis() {
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
-                            <span className="font-extrabold">3700</span>
+                            <span className="font-extrabold text-orange-800">3700</span>
                           </span>
                           <span className="text-xl font-medium text-gray-100">NFTs</span>
                         </div>
@@ -57,7 +57,7 @@ export default function Genesis() {
                             <div className="flex-shrink-0">
                               <CheckIcon className="flex-shrink-0 h-6 w-6 text-orange-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-white">{feature}</p>
+                            <p className="ml-3 text-base font-medium text-orange-800">{feature}</p>
                           </li>
                         ))}
                       </ul>
@@ -83,7 +83,7 @@ export default function Genesis() {
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100 sm:text-6xl">
-                          <span className="font-extrabold">100</span>
+                          <span className="font-extrabold text-green-800">100</span>
                         </span>
                         <span className="text-2xl font-medium text-gray-100">NFTs</span>
                       </div>
@@ -96,7 +96,7 @@ export default function Genesis() {
                           <div className="flex-shrink-0">
                             <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
                           </div>
-                          <p className="ml-3 text-base font-medium text-white">{feature}</p>
+                          <p className="ml-3 text-base font-medium text-green-800">{feature}</p>
                         </li>
                       ))}
                     </ul>
@@ -120,7 +120,7 @@ export default function Genesis() {
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
-                            <span className="font-extrabold">400</span>
+                            <span className="font-extrabold text-pink-800">400</span>
                           </span>
                           <span className="text-xl font-medium text-gray-100">NFTs</span>
                         </div>
@@ -133,7 +133,7 @@ export default function Genesis() {
                             <div className="flex-shrink-0">
                               <CheckIcon className="flex-shrink-0 h-6 w-6 text-pink-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-white">{feature}</p>
+                            <p className="ml-3 text-base font-medium text-pink-800">{feature}</p>
                           </li>
                         ))}
                       </ul>
