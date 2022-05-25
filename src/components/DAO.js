@@ -18,6 +18,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Zoom } from 'react-reveal'
 
 const features = [
   {
@@ -87,9 +88,10 @@ export default function DAO() {
       <main className="lg:relative">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+          <Zoom>
             <h1 className="text-4xl tracking-tight pacifico uppercase font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Waldos </span>{' '}
-              <span className="block text-blue-400 xl:inline">DAO</span>
+              <span className="block text-orange-400 xl:inline">DAO</span>
             </h1>
             <div className="mt-3 max-w-md mx-auto text-lg text-gray-100 sm:text-xl md:mt-5 md:max-w-3xl">
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-100 sm:text-xl md:mt-5 md:max-w-3xl">
@@ -98,15 +100,18 @@ export default function DAO() {
             <p className='mt-3'> In short, be ambitious, original and we will make the community a real strength!</p>
           
             </div>
-           
+            </Zoom>
           </div>
+         
         </div>
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <div className="relative w-full shadow-3xl rounded-3xl h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <Zoom>
           <img
-            className="absolute inset-0 w-full h-full object-contain rounded-xl"
+            className="shadow-3xl absolute inset-0 w-full h-full object-contain rounded-3xl" 
             src={DAO_IMG}
             alt=""
           />
+        </Zoom>
         </div>
       </main>
     </div>

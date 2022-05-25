@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { CheckIcon } from '@heroicons/react/outline'
 import GenesisImg from '../images/genesis.png'
+import { Zoom } from 'react-reveal';
 
 const hobbyFeatures = ['30% discount on CBD products']
 const scaleFeatures = ['40% off CBD products']
@@ -16,12 +17,14 @@ export default function Genesis() {
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <h2 className="text-lg leading-6 pacifico font-semibold text-gray-100 uppercase tracking-wider">What are the rarities ?</h2>
-          <p className="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl pacifico">
-            GENESIS COLLECTION
-          </p>
-          <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-100 sm:mt-5 sm:text-2xl">
-          The collection consists of 4200 NFTs. 4200 unique and super cool Waldos that from the first level of rarity will provide amazing benefits !
-          </p>
+          <Zoom>
+            <p className="mt-2 text-3xl text-green-500 font-extrabold text-white sm:text-4xl lg:text-5xl pacifico">
+              GENESIS COLLECTION
+            </p>
+            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-100 sm:mt-5 sm:text-2xl">
+            The collection consists of 4200 NFTs. 4200 unique and super cool Waldos that from the first level of rarity will provide amazing benefits !
+            </p>
+            </Zoom>
         </div>
       </div>
 
@@ -30,6 +33,7 @@ export default function Genesis() {
           <div className="absolute inset-0 h-5/6 bg-gradient-to-r from-cyan-500 to-blue-500  lg:h-2/3" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative lg:grid lg:grid-cols-7">
+            <Zoom>
               <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
                 <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                   <div className="flex-1 flex flex-col">
@@ -64,6 +68,8 @@ export default function Genesis() {
                   </div>
                 </div>
               </div>
+              </Zoom>
+              <Zoom>
               <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
                 <div className="relative z-10 rounded-lg shadow-xl">
                   <div
@@ -102,6 +108,8 @@ export default function Genesis() {
                   </div>
                 </div>
               </div>
+              </Zoom>
+              <Zoom>
               <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
                 <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                   <div className="flex-1 flex flex-col">
@@ -138,12 +146,17 @@ export default function Genesis() {
                   </div>
                 </div>
               </div>
+              </Zoom>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <img src={GenesisImg} alt="genesis"></img>
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 py-20">
+    <img src={GenesisImg} className="bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto w-1/2 shadow-xl rounded-3xl" alt="genesis"></img>
+
+    </div>
+
       </div>
    
   )

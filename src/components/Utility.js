@@ -32,7 +32,7 @@ export default function Utility() {
     <Zoom>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <p className="mt-2 text-4xl uppercase pacifico leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 text-4xl uppercase pacifico leading-8 font-extrabold tracking-tight text-green-500 sm:text-4xl">
           What will NFTs be used for?
           </p>
         </div>

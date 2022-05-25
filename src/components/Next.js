@@ -5,7 +5,7 @@ import next from '../images/next.png'
 
 export default function Benefits() {
   return (
-    <div className="relative bg-gradient-to-b from-orange-500 to-violet-500  pt-16 pb-32 overflow-hidden">
+    <div className="relative bg-gradient-to-t from-orange-500 to-violet-500  pt-16 pb-32 overflow-hidden">
     
       <div className='text-4xl mx-auto text-center pacifico uppercase text-white'>What'is next ?</div>
       <div className='text-white text-center text-xl mx-auto mb-12 indie'>

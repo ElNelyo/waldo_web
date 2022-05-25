@@ -12,21 +12,41 @@ import Distribution from './components/Distribution';
 import Team from './components/Team';
 import Next from './components/Next';
 
-const App = () => (
-  <div className="flex min-h-screen flex-col justify-center bg-gray-100">
-    <NavBar />
-    <HeaderBanner />
-    <Roadmap />
-    <Benefits />
-    <DAO />
-    <Community />
-    <Genesis />
-    <Utility />
-    <Distribution />
-    <Team />
-    <Next />
-    <Footer />
-  </div>
-);
+import Mint from './components/Mint/Mint';
 
-export default App;
+import {
+  BrowserRouter,
+  Routes, // instead of "Switch"
+  Route,
+} from "react-router-dom";
+
+
+const Home = () => (
+  <div className="flex min-h-screen flex-col justify-center bg-gray-100">
+  <NavBar />
+  <HeaderBanner />
+  <Roadmap />
+  <Benefits />
+  <DAO />
+  <Community />
+  <Genesis />
+  <Utility />
+  <Distribution />
+  <Team />
+  <Next />
+  <Footer />
+</div>
+)
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />}>
+        </Route>
+        <Route exact path="/mint" element={<Mint />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}

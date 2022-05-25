@@ -44,11 +44,11 @@ const people = [
 
   export default function Team() {
     return (
-      <div className="bg-gradient-to-t from-orange-500 to-cyan-500" id='team'>
+      <div className="bg-gradient-to-t from-violet-500 to-cyan-500" id='team'>
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl pacifico text-white">Team</h2>
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl pacifico text-orange-500">Team</h2>
               <p className="text-xl text-white">
               Our team is a group of friends who each have great skills to give birth to THE WALDOS LEGEND.
               </p>

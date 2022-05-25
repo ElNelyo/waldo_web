@@ -2,11 +2,25 @@
     font-family: 'Pacifico', cursive;
 }
 .indie{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto Flex', sans-serif;
 }
 p, h1, dd {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto Flex', sans-serif;
 }
+
+a:hover, a:visited, a:link, a:active {
+
+  text-decoration: none!important;
+
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
+.back-to-up-default-text {
+  color: green !important;
+}
+
+
 #pot {
    
     position: absolute;

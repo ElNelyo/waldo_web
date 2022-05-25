@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { InboxIcon, MapIcon, SparklesIcon } from '@heroicons/react/outline'
+import { Zoom } from 'react-reveal'
 import benefits_1 from '../images/benefits_1.png'
 import benefits_2 from '../images/benefits_2.png'
 
@@ -16,6 +17,7 @@ export default function Benefits() {
                 </span>
               </div>
               <div className="mt-6">
+                <Zoom>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
                   CBD PRODUCT
                 </h2>
@@ -39,17 +41,19 @@ export default function Benefits() {
                     
                     And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 15% to 50% discount on all CBD products.
                 </div>
-            
+                </Zoom>
               </div>
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0">
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+            <Zoom>
               <img
-                className="w-full rounded-xl shadow-3xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                className="w-full rounded-3xl shadow-3xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 src={benefits_1}
                 alt="Inbox user interface"
               />
+              </Zoom>
             </div>
           </div>
         </div>
@@ -64,6 +68,7 @@ export default function Benefits() {
                 </span>
               </div>
               <div className="mt-6">
+              <Zoom>
               <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
                 IRL Events
                 </h2>
@@ -83,17 +88,19 @@ export default function Benefits() {
                 </ul>
                     <div>In short, that's good !</div>
                 </p>
-                
+                </Zoom>
               </div>
             </div>
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+            <Zoom>
               <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                className="w-full rounded-3xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                 src={benefits_2}
                 alt="Customer profile user interface"
               />
+              </Zoom>
             </div>
           </div>
         </div>
