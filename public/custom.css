@@ -19,6 +19,9 @@ a:hover, a:visited, a:link, a:active {
 .back-to-up-default-text {
   color: green !important;
 }
+.back-to-up-default-text{
+  display: none;
+}
 
 
 #pot {

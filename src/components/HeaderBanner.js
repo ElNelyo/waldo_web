@@ -15,8 +15,7 @@ const HeaderBanner = () => (
     mainStyle={{
         width:'100%',
         height:'100%',
-        background: 'url(favicon.png) 0 0 no-repeat;',
-        color:"orange",
+        background: 'url(cbd_small.png)',
         zIndex:999,
 
     }}
