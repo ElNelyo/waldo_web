@@ -2,6 +2,7 @@ import avida from '../images/people/avida.png';
 import crespix from '../images/people/crespix.png';
 import baba from '../images/people/baba.png';
 import nelyo from '../images/people/nelyo.png';
+import { Zoom } from 'react-reveal';
 
 const people = [
     {
@@ -48,10 +49,14 @@ const people = [
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
+            <Zoom>
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl pacifico text-orange-500">Team</h2>
-              <p className="text-xl text-white">
-              Our team is a group of friends who each have great skills to give birth to THE WALDOS LEGEND.
-              </p>
+              </Zoom>
+              <Zoom>
+                <p className="text-xl text-white">
+                Our team is a group of friends who each have great skills to give birth to THE WALDOS LEGEND.
+                </p>
+                </Zoom>
             </div>
             <div className="lg:col-span-2">
               <ul
@@ -59,6 +64,7 @@ const people = [
                 className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
               >
                 {people.map((person) => (
+                  <Zoom>
                   <li key={person.name}>
                     <div className="space-y-4">
                       <div className="aspect-w-3 aspect-h-2">
@@ -84,6 +90,7 @@ const people = [
                       </ul>
                     </div>
                   </li>
+                  </Zoom>
                 ))}
               </ul>
             </div>

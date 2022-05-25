@@ -153,8 +153,9 @@ export default function Genesis() {
       </div>
     </div>
     <div className="bg-gradient-to-r from-cyan-500 to-blue-500 py-20">
+    <Zoom>
     <img src={GenesisImg} className="bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto w-1/2 shadow-xl rounded-3xl" alt="genesis"></img>
-
+    </Zoom>
     </div>
 
       </div>
