@@ -6,7 +6,7 @@ import { Zoom } from 'react-reveal';
 const hobbyFeatures = ['30% discount on CBD products']
 const scaleFeatures = ['40% off CBD products']
 const growthFeatures = [
-    '40% off CBD products',
+    '50% off CBD products',
   'all THE WALDOS LEGEND merchandising'
 ]
 
@@ -38,7 +38,7 @@ export default function Genesis() {
                   <div className="flex-1 flex flex-col">
                     <div className="bg-orange-300 px-6 py-10">
                       <div>
-                        <h3 className="text-center text-2xl font-medium text-gray-100" id="tier-hobby">
+                        <h3 className="text-center text-2xl font-medium text-orange-800" id="tier-hobby">
                           COMMON
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
@@ -54,9 +54,9 @@ export default function Genesis() {
                         {hobbyFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
-                              <CheckIcon className="flex-shrink-0 h-6 w-6 text-orange-500" aria-hidden="true" />
+                              <CheckIcon className="flex-shrink-0 h-10 w-10 text-orange-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-orange-800">{feature}</p>
+                            <p className="ml-3 text-xl font-medium text-white ">{feature}</p>
                           </li>
                         ))}
                       </ul>
@@ -77,8 +77,8 @@ export default function Genesis() {
                   />
                   <div className="bg-green-400 rounded-t-lg px-6 pt-12 pb-10">
                     <div>
-                      <h3 className="text-center text-3xl font-semibold text-gray-100 sm:-mx-6" id="tier-growth">
-                        MYTHIC
+                      <h3 className="text-center text-3xl font-semibold text-green-800 sm:-mx-6" id="tier-growth">
+                      RARE
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100 sm:text-6xl">
@@ -90,12 +90,12 @@ export default function Genesis() {
                   </div>
                   <div className="rounded-b-lg pt-10 pb-8 px-6 bg-green-300 sm:px-10 sm:py-10">
                     <ul role="list" className="space-y-4">
-                      {growthFeatures.map((feature) => (
+                      {scaleFeatures.map((feature) => (
                         <li key={feature} className="flex items-start">
                           <div className="flex-shrink-0">
-                            <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
+                            <CheckIcon className="flex-shrink-0 h-10 w-10 text-green-500 mb-20" aria-hidden="true" />
                           </div>
-                          <p className="ml-3 text-base font-medium text-green-800">{feature}</p>
+                          <p className="ml-3 text-xl font-medium text-white ">{feature}</p>
                         </li>
                       ))}
                     </ul>
@@ -114,8 +114,7 @@ export default function Genesis() {
                   <div className="flex-1 flex flex-col">
                     <div className="bg-pink-300 px-6 py-10">
                       <div>
-                        <h3 className="text-center text-2xl font-medium text-gray-100" id="tier-scale">
-                          RARE
+                        <h3 className="text-center text-4xl text-white indie text-pink-800"  id="tier-scale"> Mythic
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
@@ -127,12 +126,12 @@ export default function Genesis() {
                     </div>
                     <div className="flex-1 flex flex-col justify-between p-6 bg-pink-200 sm:p-10 lg:p-6 xl:p-10">
                       <ul role="list" className="space-y-4">
-                        {scaleFeatures.map((feature) => (
+                        {growthFeatures.map((feature) => (
                           <li key={feature} className="flex items-start">
                             <div className="flex-shrink-0">
                               <CheckIcon className="flex-shrink-0 h-6 w-6 text-pink-500" aria-hidden="true" />
                             </div>
-                            <p className="ml-3 text-base font-medium text-pink-800">{feature}</p>
+                            <p className="ml-3 text-xl font-medium text-white">{feature}</p>
                           </li>
                         ))}
                       </ul>
