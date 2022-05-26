@@ -800,12 +800,12 @@ a {
   margin-bottom: 3rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mb-20 {
@@ -1341,6 +1341,11 @@ a {
   line-height: 1.25rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -1455,6 +1460,16 @@ a {
 .text-pink-600 {
   --tw-text-opacity: 1;
   color: rgb(219 39 119 / var(--tw-text-opacity));
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
+}
+
+.text-violet-500 {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity));
 }
 
 .decoration-0 {
@@ -1773,6 +1788,11 @@ a {
 
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

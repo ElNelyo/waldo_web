@@ -25,7 +25,7 @@ const posts = [
         <div className="relative max-w-lg mx-auto lg:max-w-7xl">
           <div>
           <Zoom>
-            <h2 className="text-4xl sm:text-7xl tracking-tight mb-12 mt-20 text-center font-extrabold text-white uppercase pacifico">Community</h2>
+            <h2 className="text-4xl sm:text-7xl title-green tracking-tight mb-12 mt-20 shiny text-center font-extrabold text-white uppercase pacifico">Community</h2>
           </Zoom>
           </div>
           <div className="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">

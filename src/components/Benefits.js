@@ -18,7 +18,7 @@ export default function Benefits() {
               </div>
               <div className="mt-6">
                 <Zoom>
-                <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
+                <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico title-green">
                   CBD PRODUCT
                 </h2>
                 <div className="mt-4 text-2xl text-white indie">
@@ -69,7 +69,7 @@ export default function Benefits() {
               </div>
               <div className="mt-6">
               <Zoom>
-              <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico">
+              <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico title-green">
                 IRL Events
                 </h2>
                 <p className="mt-4 text-2xl text-white">

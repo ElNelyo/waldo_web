@@ -89,9 +89,9 @@ export default function DAO() {
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
           <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <Zoom>
-            <h1 className="text-4xl tracking-tight pacifico uppercase font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+            <h1 className="text-4xl mb-12 title-orange tracking-tight pacifico uppercase font-extrabold text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Waldos </span>{' '}
-              <span className="block text-orange-400 xl:inline">DAO</span>
+              <span className="block text-white xl:inline">DAO</span>
             </h1>
             <div className="mt-3 max-w-md mx-auto text-2xl text-white sm:text-xl md:mt-5 md:max-w-3xl">
             <p className="mt-3 max-w-md mx-auto text-2xl text-white sm:text-xl md:mt-5 md:max-w-3xl">

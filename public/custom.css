@@ -1,8 +1,24 @@
+@font-face {
+  font-family: 'BABY';
+  src: url('./BABYK.ttf');
+}
+@font-face {
+  font-family: 'SHINY';
+  src: url('./shiny.ttf');
+}
+
+
 .pacifico{
-    font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
 }
 .indie{
-  font-family: 'Patrick Hand', cursive;
+font-family: 'Patrick Hand', cursive;
+}
+.baby{
+  font-family: 'BABY', cursive;
+}
+.shiny{
+  font-family: 'SHINY', cursive;
 }
 p, h1, dd {
   font-family: 'Patrick Hand', cursive;
@@ -14,6 +30,16 @@ a:hover, a:visited, a:link, a:active {
 
   -webkit-box-shadow: none!important;
   box-shadow: none!important;
+}
+
+.title-green{
+  text-shadow: 0 0 20px #41a451, 0 0 30px #41a451, 0 0 40px #41a451, 0 0 55px #41a451, 0 0 75px #41a451;
+}
+.title-orange{
+  text-shadow: 0 0 20px #ff7f00, 0 0 30px #ff7f00, 0 0 40px #ff7f00, 0 0 55px #ff7f00, 0 0 75px #ff7f00;
+}
+.title-violet{
+  text-shadow: 0 0 20px #c700ff, 0 0 30px #c700ff, 0 0 40px #c700ff, 0 0 55px #c700ff, 0 0 75px #c700ff;
 }
 
 .back-to-up-default-text {

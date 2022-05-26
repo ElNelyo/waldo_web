@@ -16,9 +16,8 @@ export default function Genesis() {
  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 " id='genesis'>
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
-          <h2 className="text-lg leading-6 pacifico font-semibold text-gray-100 uppercase tracking-wider">What are the rarities ?</h2>
           <Zoom>
-            <p className="mt-2 text-3xl text-green-500 font-extrabold text-white sm:text-4xl lg:text-5xl pacifico">
+            <p className="mt-2 text-3xl text-white font-extrabold text-white sm:text-4xl lg:text-5xl pacifico title-green">
               GENESIS COLLECTION
             </p>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-white sm:mt-5 sm:text-2xl">
@@ -154,7 +153,7 @@ export default function Genesis() {
     </div>
     <div className="bg-gradient-to-r from-cyan-500 to-blue-500 py-20">
     <Zoom>
-    <img src={GenesisImg} className="bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto w-1/2 shadow-xl rounded-3xl" alt="genesis"></img>
+    <img src={GenesisImg} className="bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto w-full md:w-1/2 shadow-xl rounded-3xl" alt="genesis"></img>
     </Zoom>
     </div>
 

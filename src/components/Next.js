@@ -8,7 +8,7 @@ export default function Benefits() {
     <div className="relative bg-gradient-to-t from-orange-500 to-violet-500  pt-16 pb-32 overflow-hidden">
     
     <Zoom>
-      <div className='text-4xl mx-auto text-center pacifico uppercase text-orange-700 mb-12'>What'is next ?</div>
+      <div className='text-4xl mx-auto text-center pacifico uppercase text-white title-orange mb-12'>Next</div>
       </Zoom>
       <Zoom>
       <div className='text-white text-center text-2xl mx-auto mb-12 indie'>
@@ -19,7 +19,7 @@ export default function Benefits() {
 
 
   <Zoom><div className='text-white text-center text-2xl mx-auto mb-12 indie'> Indeed, the DAO will help define future projects for THE WALDOS LEGEND! We are listening!</div> </Zoom>
-     <Zoom><img src={next} className="w-1/2 mx-auto rounded-lg"></img></Zoom>
+     <Zoom><img src={next} className="w-full md:w-1/2 mx-auto rounded-lg"></img></Zoom>
     </div>
   )
 }

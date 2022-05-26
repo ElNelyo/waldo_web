@@ -51,7 +51,7 @@ const people = [
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4">
             <Zoom>
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl pacifico text-orange-500">Team</h2>
+              <h2 className="text-4xl sm:text-5xl text-center my-12 text-white title-violet mt-20 pacifico uppercase">Team</h2>
               </Zoom>
               <Zoom>
                 <p className="text-3xl text-white">
