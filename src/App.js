@@ -26,10 +26,10 @@ const Home = () => (
   <NavBar />
   <HeaderBanner />
   <Community />
+  <Genesis />
   <Benefits />
   <DAO />
   <Roadmap />
-  <Genesis />
   <Utility />
   <Distribution />
   <Team />

@@ -17,9 +17,9 @@ export default function Genesis() {
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="text-center">
           <Zoom>
-            <p className="mt-2 text-3xl text-white font-extrabold text-white sm:text-4xl lg:text-5xl pacifico title-green">
+            <h2 id="collection" className="mt-2 text-3xl mb-12 text-white font-extrabold text-white sm:text-4xl lg:text-5xl shiny title-green">
               GENESIS COLLECTION
-            </p>
+            </h2>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-white sm:mt-5 sm:text-2xl">
             The collection consists of 4200 NFTs. 4200 unique and super cool Waldos that from the first level of rarity will provide amazing benefits !
             </p>

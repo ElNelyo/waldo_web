@@ -33,22 +33,22 @@ export default function Utility() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <Zoom>
-            <p className="mt-2 text-4xl text-center uppercase pacifico leading-8 font-extrabold tracking-tight text-white sm:text-4xl title-orange">
+            <p className="text-4xl sm:text-7xl text-center my-20 text-white mt-20 shiny uppercase 2xl:pt-20 title-orange">
             Utility
             </p>
           </Zoom>
-        </div>
+        </div> 
 
-        <div className="mt-10">
+        <div className="mt-20">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-700 text-white">
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-orange-400 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <Zoom>
-                  <p className="ml-16 text-4xl leading-6 font-medium text-orange-800">{feature.name}</p>
+                  <p className="ml-16 text-4xl pt-2 leading-6 font-bold font-medium text-orange-400 uppercase">{feature.name}</p>
                   </Zoom>
                 </dt>
                 <Zoom>

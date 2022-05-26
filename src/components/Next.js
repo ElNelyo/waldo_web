@@ -8,7 +8,7 @@ export default function Benefits() {
     <div className="relative bg-gradient-to-t from-orange-500 to-violet-500  pt-16 pb-32 overflow-hidden">
     
     <Zoom>
-      <div className='text-4xl mx-auto text-center pacifico uppercase text-white title-orange mb-12'>Next</div>
+      <div className='text-4xl sm:text-7xl text-center my-20 text-white mt-20 shiny uppercase 2xl:pt-20 title-orange'>Next</div>
       </Zoom>
       <Zoom>
       <div className='text-white text-center text-2xl mx-auto mb-12 indie'>

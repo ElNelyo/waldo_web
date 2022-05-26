@@ -8,11 +8,14 @@ import logo from '../images/favicon.png'
 
 const navigation = [
   { name: 'About', href: '#about', current: true },
+  { name: 'Community', href: '#community', current: false },
+  { name: 'Collection', href: '#collection', current: false },
   { name: 'DAO', href: '#DAO', current: false },
+  { name: 'Roadmap', href: '#roadmap', current: false },
+  { name: 'Utility', href: '#utility', current: false },
   { name: 'Distribution', href: '#distribution', current: false },
   { name: 'Team', href: '#team', current: false },
-  { name: 'Roadmap', href: '#roadmap', current: false },
-  { name: 'Utility', href: '#utility', current: false }
+ 
 ]
 
 function classNames(...classes) {
@@ -54,7 +57,7 @@ export default function NavBar() {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-indigo-700 text-white' : 'text-white hover:bg-indigo-500 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium decoration-0 indie'
+                          'px-3 py-2 rounded-md text-xl font-medium decoration-0 indie'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >

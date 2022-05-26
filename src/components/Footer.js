@@ -2,11 +2,14 @@
 const navigation = {
     main: [
       { name: 'About', href: '#about' },
-      { name: 'DAO', href: '#DAO' },
-      { name: 'Distribution', href: '#distribution' },
-      { name: 'Team', href: '#team' },
+      { name: 'Community', href: '#community'},
+      { name: 'Collection', href: '#collection' },
+      { name: 'DAO', href: '#DAO'},
       { name: 'Roadmap', href: '#roadmap' },
-      { name: 'Utility', href: '#utility' },
+      { name: 'Utility', href: '#utility'},
+      { name: 'Distribution', href: '#distribution' },
+      { name: 'Team', href: '#team'},
+     
     ],
     social: [
       {

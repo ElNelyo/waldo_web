@@ -5,7 +5,7 @@ import distribution from '../images/distribution.png';
 const Distribution = () => (
   <div className="bg-gradient-to-r from-cyan-500 to-blue-500 pt-8" id='distribution'>
      <Zoom>
-      <div className='text-4xl sm:text-5xl text-center my-12 text-white title-green mt-20 pacifico uppercase '>
+      <div className='text-4xl sm:text-7xl text-center my-20 text-white mt-20 shiny uppercase 2xl:pt-20 title-green'>
           Distribution
       </div>
       </Zoom>

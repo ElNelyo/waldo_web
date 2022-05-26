@@ -3,6 +3,7 @@ import { InboxIcon, MapIcon, SparklesIcon } from '@heroicons/react/outline'
 import { Zoom } from 'react-reveal'
 import benefits_1 from '../images/benefits_1.png'
 import benefits_2 from '../images/benefits_2.png'
+import benefits_3 from '../images/benefits_3.png'
 
 export default function Benefits() {
   return (
@@ -50,7 +51,7 @@ export default function Benefits() {
             <Zoom>
               <img
                 className="w-1/2 md:w-full rounded-3xl shadow-3xl ring-1 ring-black ring-opacity-5 "
-                src={benefits_1}
+                src={benefits_3}
                 alt="Inbox user interface"
               />
               </Zoom>
