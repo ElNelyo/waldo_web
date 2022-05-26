@@ -2,6 +2,7 @@ import avida from '../images/people/avida.png';
 import crespix from '../images/people/crespix.png';
 import baba from '../images/people/baba.png';
 import nelyo from '../images/people/nelyo.png';
+import jphi from '../images/people/jphi.png';
 import { Zoom } from 'react-reveal';
 
 const people = [
@@ -29,7 +30,7 @@ const people = [
     {
       name: 'JPHI',
       role: 'Advisor',
-      imageUrl:avida,
+      imageUrl:jphi,
       bio: 'Crypto and NFT veteran in the blockchain, founder of the French-speaking community "Les Collectionneurs NFT", is a major asset in THE WALDOS LEGEND. The knowledge and the network it provides are indispensable in all the processes we encounter in the project.',
       twitterUrl: '#'
     },
@@ -64,18 +65,22 @@ const people = [
                 className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
               >
                 {people.map((person) => (
-                  <Zoom>
+                
                   <li key={person.name}>
                     <div className="space-y-4">
                       <div className="aspect-w-3 aspect-h-2">
+                      <Zoom>
                         <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                        </Zoom>
                       </div>
                       <div className="text-lg leading-6 font-medium space-y-1">
                         <h3 className='text-2xl pacifico text-indigo-700 mb-2'>{person.name}</h3>
                         <p className="text-indigo-800 text-4xl font-bold">{person.role}</p>
                       </div>
                       <div className="text-lg">
-                        <p className="text-white text-2xl">{person.bio}</p>
+                        <Zoom>
+                          <p className="text-white text-2xl">{person.bio}</p>
+                        </Zoom>
                       </div>
   
                       <ul role="list" className="flex space-x-5">
@@ -90,7 +95,6 @@ const people = [
                       </ul>
                     </div>
                   </li>
-                  </Zoom>
                 ))}
               </ul>
             </div>

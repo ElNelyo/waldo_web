@@ -65,11 +65,11 @@ const HeaderBanner = () => (
               </div>
             </Zoom>
             <div className='relative sm:mb-72 text-center mt-10 md:pb-10 2xl:pb-32  ' >
-                <img src={background_dino} className="w-1/2 absolute rounded-3xl shadow-xl"></img>
+                <img src={background_dino} className="w-full md:w-1/2 absolute rounded-3xl shadow-xl"></img>
                 <ReactFloaterJs>
-                  <img src={dino} className="w-1/2 mx-auto absolute rounded-3xl  "></img>
+                  <img src={dino} className="w-full md:w-1/2  mx-auto absolute rounded-3xl  "></img>
                 </ReactFloaterJs>
-                <img src={people_dino} className="w-1/2 mx-auto absolute rounded-3xl"></img>
+                <img src={people_dino} className="w-full md:w-1/2 mx-auto absolute rounded-3xl"></img>
             </div>
          </div>
         </div>

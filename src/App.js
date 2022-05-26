@@ -25,10 +25,10 @@ const Home = () => (
   <div className="flex min-h-screen flex-col justify-center bg-gray-100">
   <NavBar />
   <HeaderBanner />
-  <Roadmap />
+  <Community />
   <Benefits />
   <DAO />
-  <Community />
+  <Roadmap />
   <Genesis />
   <Utility />
   <Distribution />

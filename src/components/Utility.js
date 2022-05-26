@@ -29,12 +29,14 @@ const features = [
 export default function Utility() {
   return (
     <div className="py-12 bg-gradient-to-r from-cyan-500 to-blue-500" id='utility'> 
-    <Zoom>
+ 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <p className="mt-2 text-4xl uppercase pacifico leading-8 font-extrabold tracking-tight text-green-500 sm:text-4xl">
-          What will NFTs be used for?
-          </p>
+          <Zoom>
+            <p className="mt-2 text-4xl uppercase pacifico leading-8 font-extrabold tracking-tight text-green-500 sm:text-4xl">
+            What will NFTs be used for?
+            </p>
+          </Zoom>
         </div>
 
         <div className="mt-10">
@@ -45,16 +47,18 @@ export default function Utility() {
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-700 text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
+                  <Zoom>
                   <p className="ml-16 text-4xl leading-6 font-medium text-orange-800">{feature.name}</p>
+                  </Zoom>
                 </dt>
-                <dd className="mt-4 ml-16 text-2xl text-white">{feature.description}</dd>
+                <Zoom>
+                  <dd className="mt-4 ml-16 text-2xl text-white">{feature.description}</dd>
+                </Zoom>
               </div>
             ))}
           </dl>
         </div>
       </div>
-     </Zoom>
-    
     </div>
   )
 }
