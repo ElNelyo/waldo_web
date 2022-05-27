@@ -62,42 +62,13 @@ export default function Benefits() {
       <div className="mt-24">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-            <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-green-500">
-                  <MapIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                </span>
-              </div>
-              <div className="mt-6">
-              <Zoom>
-              <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico title-green">
-                IRL Events
-                </h2>
-                <p className="mt-4 text-2xl text-white">
-                THE WALDOS LEGEND, in addition to being in partnership with the best CBD producer in Europe, provides for Waldos IRL advantages with other areas:
-
-                <ul>
-                    <li>
-                        VIP seats for CBD-related events
-                    </li>
-                    <li>
-                        VIP seats for events (concerts, exhibitions, festivals, conferences, etc.)
-                    </li>
-                    <li>
-                    All-expenses-paid weekends and trips to pretty cool destinations (Barcelona, Lisbon, Ibiza, Paris, Los Angeles, Malta, Amsterdam, etc.) to discover local places and products.
-                    </li>
-                </ul>
-                    <div>In short, that's good !</div>
-                </p>
-                </Zoom>
-              </div>
-            </div>
+            
           </div>
           <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-            <div className="pr-4 h-full sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+            <div className="h-full sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
             <Zoom>
               <img
-                className="w-full mt-6 md:mt-0 md:w-full rounded-3xl shadow-xl ring-1 ring-black ring-opacity-5 "
+                className="w-full mt-6 md:mt-0 md:w-full mx-auto rounded-3xl shadow-xl ring-1 ring-black ring-opacity-5 "
                 src={benefits_2}
                 alt="Customer profile user interface"
               />

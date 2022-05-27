@@ -19,7 +19,7 @@ export default function Benefits() {
 
 
   <Zoom><div className='text-white text-center text-2xl mx-auto mb-12 indie'> Indeed, the DAO will help define future projects for THE WALDOS LEGEND! We are listening!</div> </Zoom>
-     <Zoom><img src={next} className="w-full md:w-1/2 mx-auto rounded-lg"></img></Zoom>
+     <Zoom><img src={next} className="w-full md:w-1/2 mx-auto rounded-3xl"></img></Zoom>
     </div>
   )
 }

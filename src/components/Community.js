@@ -11,12 +11,7 @@ const posts = [
     {
       title: 'Why become a Waldos?',
       description: 'Being part of the community is simply being part of a family. Not a club, a brotherhood and other bullshit, no. It\'s finding friends, passionate like us, who want to share their passions, their desires, their visions.',
-    },
-    {
-      title: 'DAO',
-      description:
-        'The community aspect will be key in THE WALDOS LEGEND: We will put the concerns of the Waldos at the center of the attention of the TWL team. Thus, we hope that the holders can during conferences and AMA propose their ideas, their expectations, in order to develop the project as well as possible. Waldos will be able to choose what type of perks they prefer or would like to see within THE WALDOS LEGEND',
-    },
+    }
   ]
   
   export default function Community() {

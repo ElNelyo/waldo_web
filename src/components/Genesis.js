@@ -82,7 +82,7 @@ export default function Genesis() {
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100 sm:text-6xl">
-                          <span className="font-extrabold text-green-800">100</span>
+                          <span className="font-extrabold text-green-800">400</span>
                         </span>
                         <span className="text-2xl font-medium text-gray-100">NFTs</span>
                       </div>
@@ -118,7 +118,7 @@ export default function Genesis() {
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
-                            <span className="font-extrabold text-pink-800">400</span>
+                            <span className="font-extrabold text-pink-800">100</span>
                           </span>
                           <span className="text-xl font-medium text-gray-100">NFTs</span>
                         </div>

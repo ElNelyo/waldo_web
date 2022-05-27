@@ -31,10 +31,10 @@ const HeaderBanner = () => (
   />
 
 
-    <div className='relative sm:mb-72'>
+    <div className='relative md::mb-72'>
       <video src={banniere_video} autoPlay muted loop type="video/mp4" className='w-full absolute'></video>
         <div id="pot" className='mb-72'>
-          <img  src={plane} alt="banniere" className='w-full h-32 hidden sm:block mt-72 mb-72 ' />
+          <img  src={plane} alt="banniere" className='w-full md:h-32 h-12 sm:block mt-20 md:mt-72 mb-72 ' />
         </div>
         
     </div>
@@ -45,9 +45,9 @@ const HeaderBanner = () => (
         <div className="flex flex-col">
           <Zoom>
           <div className='mt-20 z-2 '>
-              <div className='uppercase text-center text-4xl md:text-7xl text-white shiny mb-12 mt-20 md:mt-72 title-green'>
+              <h1 id="about"className='uppercase text-center text-4xl md:text-7xl text-white shiny mb-12 mt-20 md:mt-72 title-green'>
                   The Waldos Legend
-              </div>
+              </h1>
 
               <div className='text-white indie'>
                   <div className='text-white indie text-2xl'><strong className='text-green-400'>THE WALDOS LEGEND</strong> is the realization of a wacky project created by a talented and ambitious team. Passionate about blockchain, NFT and especially hemp cultivation, we are creating through the Waldos the first NFT project focused on CBD.</div>

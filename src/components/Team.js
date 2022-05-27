@@ -67,7 +67,7 @@ const people = [
                     <div className="space-y-4">
                    
                       <Zoom>
-                        <img className="object-contain shadow-lg rounded-xl h-72" src={person.imageUrl} alt="" />
+                        <img className="object-contain shadow-lg rounded-xl md:h-72" src={person.imageUrl} alt="" />
                         </Zoom>
                       
                       <div className="text-lg leading-6 font-medium space-y-1">
