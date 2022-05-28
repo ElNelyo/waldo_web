@@ -40,7 +40,7 @@ export default function Benefits() {
                     </ul>
                    
                     
-                    And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 15% to 50% discount on all CBD products.
+                    And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 30% to 50% discount on all CBD products.
                 </div>
                 </Zoom>
               </div>
