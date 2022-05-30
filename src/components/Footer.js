@@ -14,7 +14,7 @@ const navigation = {
     social: [
       {
         name: 'Instagram',
-        href: 'https://www.instagram.com/thewaldoslegends/',
+        href: 'https://www.instagram.com/thewaldoslegend',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
