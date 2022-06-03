@@ -9,8 +9,14 @@ import dino from '../images/dino.png'
 import BackToTop from 'react-back-to-top';
 import { Zoom } from 'react-reveal';
 import ReactFloaterJs from 'react-floaterjs'
+import { useTranslation } from 'react-i18next';
 
-const HeaderBanner = () => (
+
+export default function HeaderBanner() {
+    const { t, i18n } = useTranslation();
+  
+  return(
+  
   <div className="">
     <BackToTop isPercent="false"
     mainStyle={{
@@ -47,22 +53,23 @@ const HeaderBanner = () => (
           <div className='mt-20 z-2 '>
               <h1 id="about"className='uppercase text-center text-4xl md:text-7xl text-white shiny mb-12 mt-20 md:mt-72 title-green'>
                   The Waldos Legend
+                 
               </h1>
 
               <div className='text-white indie'>
-                  <div className='text-white indie text-2xl'><strong className='text-green-400'>THE WALDOS LEGEND</strong> is the realization of a wacky project created by a talented and ambitious team. Passionate about blockchain, NFT and especially hemp cultivation, we are creating through the Waldos the first NFT project focused on CBD.</div>
+                  <div className='text-white indie text-2xl'>{t("header_banner_text_1")}</div>
                 
 
-                  <div className='mt-12 text-2xl'>What is this legend that everyone is talking about in the metaverse? It is rooted in the story of the Waldos, dreamy young students full of ideals, like all of us, who sneaked out to meet up with friends and heard about a mysterious marijuana field abandoned by a coast guard who could not take care of it anymore. Thus, once a week at 4:20 p.m. after school, the Waldos met to go on an adventure to find this treasure... But in the end, they couldn't make it...
+                  <div className='mt-12 text-2xl'>{t("header_banner_text_2")}
                   </div>
 
                   <div className='mt-12 text-2xl'>
-                      Finally, it is today, in the metaverse, that the legend reappears through THE WALDOS LEGEND and all Waldos can now search for the real abandoned field!
+                  {t("header_banner_text_3")}
                   </div>
 
-                <div className='mt-12 text-2xl'>Thus, we offer Waldos access to truly exclusive advantages through this crazy project!</div>
-                <div className='mt-12 text-2xl'>To do so, the TWL team already has all the cards in hand to satisfy the Waldos: the best supplier of flowers and CBD-derived products in Europe is already our trusted partner, ready to provide the best qualities. of the world to the Waldos to encourage them to find this treasure.</div>
-                <div className='mt-12 text-2xl'>But before you run into the metaverse to get your hands on the One Piece of the Waldos, please read up on all aspects of THE WALDOS LEGEND!</div>
+                <div className='mt-12 text-2xl'>{t("header_banner_text_4")}</div>
+                <div className='mt-12 text-2xl'>{t("header_banner_text_5")}</div>
+                <div className='mt-12 text-2xl'>{t("header_banner_text_6")}</div>
                 </div>
               </div>
             </Zoom>
@@ -84,6 +91,5 @@ const HeaderBanner = () => (
  
 
   </div>
-);
-
-export default HeaderBanner;
+)
+}

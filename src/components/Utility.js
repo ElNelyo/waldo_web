@@ -1,32 +1,39 @@
 import React from 'react';
 import roadmap from '../images/roadmap.png';
 import Zoom from 'react-reveal/Zoom';
+import { useTranslation } from 'react-i18next';
 
 /* This example requires Tailwind CSS v2.0+ */
 import { AnnotationIcon, CashIcon, GlobeAltIcon, LightningBoltIcon, MapIcon, MoonIcon, ScaleIcon } from '@heroicons/react/outline'
 
-const features = [
-  {
-    name: 'Waldos Shop access',
-    description:
-      'Owning an NFT will allow you to access the part reserved for the community on THE WALDOS LEGEND online shop and to be able to easily buy the best CBD products at unbeatable prices! You will also be able to buy the merchandising reserved for holders.',
-    icon: GlobeAltIcon,
-  },
-  {
-    name: 'IRL Events',
-    description:
-      'Thanks to a Waldos NFT, you will be able to benefit from limited access to events reserved for holders: Musical concerts, Festivals, Exhibitions, Meeting of communities',
-    icon: MapIcon,
-  },
-  {
-    name: 'Whitelist & Giveaway',
-    description:
-      'With strong and promising partners, we will offer holders access to super cool WLs and giveaways in unmissable projects in the blockchain! The choice of projects can even be decided in DAO by the community.',
-    icon: CashIcon,
-  }
-]
+
 
 export default function Utility() {
+  const { t, i18n } = useTranslation();
+
+
+  const features = [
+    {
+      name: 'Waldos Shop access',
+      description:
+        t('utility_text_1'),
+      icon: GlobeAltIcon,
+    },
+    {
+      name: 'IRL Events',
+      description:
+        t('utility_text_2'),
+      icon: MapIcon,
+    },
+    {
+      name: 'Whitelist & Giveaway',
+      description:
+        t('utility_text_3'),
+      icon: CashIcon,
+    }
+  ]
+
+  
   return (
     <div className="py-12 bg-gradient-to-r from-cyan-500 to-blue-500" id='utility'> 
  
@@ -34,7 +41,7 @@ export default function Utility() {
         <div className="lg:text-center">
           <Zoom>
             <p className="text-4xl sm:text-7xl text-center my-20 text-white mt-20 shiny uppercase 2xl:pt-20 title-orange">
-            Utility
+            {t('utility_text_title')}
             </p>
           </Zoom>
         </div> 

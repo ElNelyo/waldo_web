@@ -2,15 +2,21 @@
 import { CheckIcon } from '@heroicons/react/outline'
 import GenesisImg from '../images/genesis.png'
 import { Zoom } from 'react-reveal';
+import { useTranslation } from 'react-i18next';
 
-const hobbyFeatures = ['30% discount on CBD products']
-const scaleFeatures = ['40% off CBD products']
-const growthFeatures = [
-    '50% off CBD products',
-  'all THE WALDOS LEGEND merchandising'
-]
+
 
 export default function Genesis() {
+  const { t, i18n } = useTranslation();
+
+  const hobbyFeatures = [t("genesis_text_5")]
+const scaleFeatures = [t("genesis_text_6")]
+const growthFeatures = [
+  [t("genesis_text_7")],
+  [t("genesis_text_8")]
+]
+
+
   return (
       <div>
  <div className="bg-gradient-to-r from-cyan-500 to-blue-500 " id='genesis'>
@@ -18,10 +24,10 @@ export default function Genesis() {
         <div className="text-center">
           <Zoom>
             <h2 id="collection" className="mt-2 text-3xl mb-12 text-white font-extrabold text-white sm:text-4xl lg:text-5xl shiny title-green">
-              GENESIS COLLECTION
+              {t("genesis_title")}
             </h2>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-white sm:mt-5 sm:text-2xl">
-            The collection consists of 4200 NFTs. 4200 unique and super cool Waldos that from the first level of rarity will provide amazing benefits !
+            {t("genesis_text_1")}
             </p>
             </Zoom>
         </div>
@@ -39,7 +45,7 @@ export default function Genesis() {
                     <div className="bg-orange-300 px-6 py-10">
                       <div>
                         <h3 className="text-center text-2xl font-medium text-orange-800" id="tier-hobby">
-                          COMMON
+                        {t("genesis_text_2")}
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
@@ -78,7 +84,7 @@ export default function Genesis() {
                   <div className="bg-green-400 rounded-t-lg px-6 pt-12 pb-10">
                     <div>
                       <h3 className="text-center text-3xl font-semibold text-green-800 sm:-mx-6" id="tier-growth">
-                      RARE
+                      {t("genesis_text_3")}
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100 sm:text-6xl">
@@ -114,7 +120,7 @@ export default function Genesis() {
                   <div className="flex-1 flex flex-col">
                     <div className="bg-pink-300 px-6 py-10">
                       <div>
-                        <h3 className="text-center text-4xl text-white indie text-pink-800"  id="tier-scale"> Mythic
+                        <h3 className="text-center text-4xl text-white indie text-pink-800"  id="tier-scale"> {t("genesis_text_4")}
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">

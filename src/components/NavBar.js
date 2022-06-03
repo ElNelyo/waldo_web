@@ -3,7 +3,9 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { PlusSmIcon } from '@heroicons/react/solid'
-
+import i18n from "../translations/i18n";
+import ReactCountryFlag from "react-country-flag"
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 import logo from '../images/favicon.png'
 
@@ -18,6 +20,10 @@ const navigation = [
   { name: 'Team', href: '#team', current: false },
 ]
 
+const changeLanguage = (lng) => {
+  NotificationManager.info('Language changed');
+  i18n.changeLanguage(lng);
+}
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -44,7 +50,7 @@ export default function Example() {
                 </div>
                 <div className="flex-shrink-0 flex items-center">
                 <img
-                    className="block h-8 w-auto rounded-full"
+                    className="block h-12 w-auto rounded-full"
                     src={logo}
                     alt="Logo"
                   />
@@ -66,6 +72,35 @@ export default function Example() {
                 </div>
               </div>
               <div className="flex items-center">
+
+              <NotificationContainer/>
+              <div className='flex space-x-4 mr-4'>
+                <button  onClick={() => changeLanguage('fr')}>
+                <ReactCountryFlag
+                countryCode="FR"
+                svg
+                style={{
+                    width: '2em',
+                    height: '2em',
+                }}
+                title=""
+            />
+
+                </button>
+                <button onClick={() => changeLanguage('en')}>
+                <ReactCountryFlag
+                countryCode="US"
+                svg
+                style={{
+                    width: '2em',
+                    height: '2em',
+                }}
+                title=""
+            />
+               </button>
+    
+              </div>
+
                 <div className="flex-shrink-0">
                   <a href='https://discord.gg/4jYmvufSFT' target="_blank">
                   <button

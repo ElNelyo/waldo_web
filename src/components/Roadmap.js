@@ -10,7 +10,7 @@ const Roadmap = () => (
       </div>
       </Zoom>
       <Zoom>
-      <img src={roadmap} alt="roadmap" className='w-3/4 mx-auto mb-12 rounded-3xl shadow-xl'/>
+      <img src={roadmap} alt="roadmap" className=' mx-auto mb-12 rounded-3xl shadow-xl'/>
       </Zoom>
   </div>
 );

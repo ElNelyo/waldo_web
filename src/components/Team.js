@@ -4,58 +4,64 @@ import baba from '../images/people/baba.png';
 import nelyo from '../images/people/nelyo.png';
 import jphi from '../images/people/jphi.png';
 import { Zoom } from 'react-reveal';
+import { useTranslation } from 'react-i18next';
 
-const people = [
-    {
-      name: 'Gaël AKA "Avida"',
-      role: 'Founder',
-      imageUrl:avida,
-      bio: 'IRL painter and 2D/3D graphic designer in the blockchain, is the initiator of the project: NFT enthusiast and aficionados of the CBD, he is the creator of all the graphic charter and the NFT collection.',
-      twitterUrl: 'https://twitter.com/Avidadollart',
-      instagramUrl:"https://www.instagram.com/gaelgao.art/"
-    },
-    {
-        name: 'Laurent AKA "Crespix"',
-        role: 'Founder',
-        imageUrl:crespix,
-        bio: 'Connoisseur of the Blockchain and NFT environment, CBD lover, is Head of communication: He is the one who will find us quality partners, very interesting collaborations to offer rewards to the Waldos. He also takes care of the management of social networks.',
-        twitterUrl: 'https://twitter.com/crespiix',
-        instagramUrl:""
-    },
-    {
-        name: 'Bastien AKA "Baba"',
-        role: 'Founder',
-        imageUrl:baba,
-        bio: 'Manager of an IRL company in the field of the sale of culture products, also specialized in CBD, is in charge of the "products and logistics" part. With a long experience in the CBD business, it is thanks to him that the Waldos have rare and qualitative products.',
-        twitterUrl: '#',
-        instagramUrl:""
-    },
-    {
-      name: 'JPHI',
-      role: 'Advisor',
-      imageUrl:jphi,
-      bio: 'Crypto and NFT veteran in the blockchain, founder of the French-speaking community "Les Collectionneurs NFT", is a major asset in THE WALDOS LEGEND. The knowledge and the network it provides are indispensable in all the processes we encounter in the project.',
-      twitterUrl: 'https://twitter.com/jpchedy',
-      instagramUrl:""
-    },
-    {
-      name: 'Nelyo',
-      role: 'Friends',
-      imageUrl:nelyo,
-      bio: 'Talented blockchain developer, is the magician who brings THE WALDOS LEGEND project to life thanks to the smart contract, the legal integration with NFTs, the proper functioning of the ecosystem. ( pfp by @missingwatcher) ',
-      twitterUrl: 'https://twitter.com/ElNelyo',
-      instagramUrl:""
-    },
 
-  ]
 
   export default function Team() {
+
+    const { t, i18n } = useTranslation();
+    
+    const people = [
+      {
+        name: 'Gaël AKA "Avida"',
+        role: 'Founder',
+        imageUrl:avida,
+        bio: t("team_text_1"),
+        twitterUrl: 'https://twitter.com/Avidadollart',
+        instagramUrl:"https://www.instagram.com/gaelgao.art/"
+      },
+      {
+          name: 'Laurent AKA "Crespix"',
+          role: 'Founder',
+          imageUrl:crespix,
+          bio: t("team_text_2"),
+          twitterUrl: 'https://twitter.com/crespiix',
+          instagramUrl:""
+      },
+      {
+          name: 'Bastien AKA "Baba"',
+          role: 'Founder',
+          imageUrl:baba,
+          bio: t("team_text_3"),
+          twitterUrl: '#',
+          instagramUrl:""
+      },
+      {
+        name: 'JPHI',
+        role: 'Advisor',
+        imageUrl:jphi,
+        bio: t("team_text_4"),
+        twitterUrl: 'https://twitter.com/jpchedy',
+        instagramUrl:""
+      },
+      {
+        name: 'Nelyo',
+        role: 'Friends',
+        imageUrl:nelyo,
+        bio: t("team_text_5"),
+        twitterUrl: 'https://twitter.com/ElNelyo',
+        instagramUrl:""
+      },
+  
+    ]
+
     return (
       <div className="bg-gradient-to-t from-violet-500 to-cyan-500" id='team'>
             <div className="lg:text-center">
               <Zoom>
                 <p className="text-4xl sm:text-7xl text-center my-20 text-white mt-20 shiny uppercase 2xl:pt-20 title-violet">
-                Team
+                {t("team_text_title")}
                 </p>
               </Zoom>
             </div>

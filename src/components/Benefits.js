@@ -4,8 +4,12 @@ import { Zoom } from 'react-reveal'
 import benefits_1 from '../images/benefits_1.png'
 import benefits_2 from '../images/benefits_2.png'
 import benefits_3 from '../images/benefits_3.png'
+import { useTranslation } from 'react-i18next';
 
 export default function Benefits() {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="relative bg-gradient-to-r from-green-500 to-blue-500  pt-16 pb-32 overflow-hidden">
       <div className="relative">
@@ -20,27 +24,26 @@ export default function Benefits() {
               <div className="mt-6">
                 <Zoom>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white pacifico title-green">
-                  CBD PRODUCT
+                  {t("benefits_title")}
                 </h2>
                 <div className="mt-4 text-2xl text-white indie">
-                The Waldos will have exclusive access to the Waldos Shop: On the menu, varieties of high quality CBD products, tested and approved by the team to satisfy all desires.
-                    
+                {t("benefits_text_1")}
                     <ul className='mx-4 my-2'>
-                     <li>CBD flowers</li>
-                     <li>CBD resins</li>
-                     <li>Cosmetic products</li>
-                     <li>Products with therapeutic effects</li>
+                     <li> {t("benefits_text_2")}</li>
+                     <li> {t("benefits_text_3")}</li>
+                     <li> {t("benefits_text_4")}</li>
+                     <li> {t("benefits_text_5")}</li>
                     </ul>
              
 
-                    But also merchandising such as:
+                    {t("benefits_text_6")}
                     <ul className='mx-4 my-2'>
-                     <li>A WALDOS brand, Hoodies, Tshirts, hats, etc.</li>
-                     <li>Accessories, lighters, grinders, stickers, ect</li>
+                     <li> {t("benefits_text_7")}</li>
+                     <li> {t("benefits_text_8")}</li>
                     </ul>
                    
                     
-                    And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 30% to 50% discount on all CBD products.
+                    {t("benefits_text_9")}
                 </div>
                 </Zoom>
               </div>

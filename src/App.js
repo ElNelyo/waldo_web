@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useContext} from 'react';
 import HeaderBanner from './components/HeaderBanner';
 import NavBar from './components/NavBar';
 import Benefits from './components/Benefits';
@@ -11,15 +11,14 @@ import Utility from './components/Utility';
 import Distribution from './components/Distribution';
 import Team from './components/Team';
 import Next from './components/Next';
-
 import Mint from './components/Mint/Mint';
-
 import {
   BrowserRouter,
   Routes, // instead of "Switch"
   Route,
 } from "react-router-dom";
 
+import "./translations/i18n";
 
 const Home = () => (
   <div className="flex min-h-screen flex-col justify-center bg-gray-100">
