@@ -38,15 +38,29 @@ export default function HeaderBanner() {
 
 
     <div className='relative md::mb-72'>
+     
+
       <video src={banniere_video} autoPlay muted loop type="video/mp4" className='w-full absolute'></video>
         <div id="pot" className='mb-72'>
           <img  src={plane} alt="banniere" className='w-full md:h-32 h-12 sm:block mt-20 md:mt-72 mb-72 ' />
         </div>
         
+    
     </div>
 
 
     <div className="bg-gradient-to-r from-violet-900 to-blue-500 md:mt-72 2xl:mt-[600px] sm:mt-72 w-full block pb-32" id='genesis'>
+
+    <div className='text-center absolute z-10 mx-auto justify-center left-[25%] md:left-[45%] md:mt-72 2xl:mt-44 mt-32'>
+      <a href='https://gael-avida.gitbook.io/the-waldos-legend-whitepaper/' target="_blank">
+          <button
+            type="button"
+            className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            READ WALLPAPER
+          </button> 
+        </a>
+      </div> 
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="flex flex-col">
           <Zoom>
