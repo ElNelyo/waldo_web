@@ -25,7 +25,6 @@ const handleMint = async (e) => {
   const amount = web3.utils.toWei(String(0.04), 'ether');
   const priceFromSC = await Contract.methods.mintPrice().call();
 
-  console.log(priceFromSC);
   try {
     const result = await Contract.methods
       .WaldosMint(1, account)

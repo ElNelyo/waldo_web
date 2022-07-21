@@ -12,6 +12,7 @@ import Distribution from './components/Distribution';
 import Team from './components/Team';
 import Next from './components/Next';
 import Mint from './components/Mint/Mint';
+import CodePromo from './components/CodePromo/CodePromo';
 import {
   BrowserRouter,
   Routes, // instead of "Switch"
@@ -44,6 +45,8 @@ export default function App() {
         <Route exact path="/" element={<Home />}>
         </Route>
         <Route exact path="/mint" element={<Mint />}>
+        </Route>
+        <Route exact path="/promo" element={<CodePromo />}>
         </Route>
       </Routes>
     </BrowserRouter>
