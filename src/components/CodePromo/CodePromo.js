@@ -6,7 +6,7 @@ import people_dino from '../../images/people_dino.png'
 import dino from '../../images/dino.png'
 import ReactFloaterJs from 'react-floaterjs'
 import { PlusIcon } from '@heroicons/react/solid'
-
+const axios = require('axios');
 
 
 
@@ -15,6 +15,8 @@ const [isMetamaskLogged, setIsMetamaskLogged] = useState(false);
 const [clientAddress, setClientAddress] = useState("");
 const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
+const [highestRank, setHighestRank] = useState("");
+
 
 const connectMetamask = async (e) => {
     window.ethereum.request({method:'eth_requestAccounts'})
@@ -26,16 +28,53 @@ const connectMetamask = async (e) => {
             setEndClientAddress(res[0].slice(res[0].length - 4))
     })
 }
+
+async function  scanWallet(Contract, account){
+    const owned = await Contract.methods.balanceOf(account).call();
+    const maxSupply = await Contract.methods.totalSupply().call();
+    let maxRank = null
+    if(owned > 0 ){
+    maxRank = "Common"
+      for(let i=0; i<maxSupply; i++){
+          const nftScanner = await Contract.methods.ownerOf(i).call()
+          if(String(nftScanner).toLowerCase()==String(account).toLowerCase()){
+              const json = await Contract.methods.tokenURI(i).call();
+              const res = await axios.get(json);
+              const type = res.data.attributes[0].value;
+              if(type=="Common"){
+                  if(maxRank != "Mythic" && maxRank != "Rare" ){
+                    maxRank = "Common";
+                  }
+              }
+              if(type=="Rare"){
+                  if(maxRank != "Mythic"){
+                    maxRank= "Rare";
+                  }
+              }
+              if(type=="Mythic"){
+                maxRank  = "Mythic";
+              }
+              
+          }
+        }
+
+  }else{
+    console.log("Don't own any NFTs :(");
+  }
+
+  return maxRank
+}
 const handleScan = async (e) => {
   const abi = ABI;
   const web3 = new Web3(Web3.givenProvider);
   const contractAdress = '0x3d155ac6fccf3ea5d5aaacdf33d9fbf09bb923ed';
   const Contract = new web3.eth.Contract(abi, contractAdress);
-
   const accounts = await window.ethereum.enable();
   const account = accounts[0];
 
-  console.log("scan")
+  const rank = await scanWallet(Contract, account);
+  console.log(rank)
+  setHighestRank(rank)
 };
 return (
 
@@ -78,6 +117,11 @@ return (
         </div>
      </div>
 
+
+     <div className='text-white text-center'> 
+            { highestRank != "" ? `You own a ${highestRank}  NFT ! ` : <div></div>} 
+     </div>
+    
 
     <div className='mx-auto text-center mt-56'>
         
