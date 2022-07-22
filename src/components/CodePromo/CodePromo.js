@@ -11,7 +11,7 @@ import { PlusIcon } from '@heroicons/react/solid'
 
 
 function CodePromo(){
-const [isMetamaskLogged, setIMetamaskLogged] = useState(false);
+const [isMetamaskLogged, setIsMetamaskLogged] = useState(false);
 const [clientAddress, setClientAddress] = useState("");
 const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
@@ -21,7 +21,7 @@ const connectMetamask = async (e) => {
     .then(res=>{
             // Return the address of the wallet
             setClientAddress(String(res[0]))
-            setIMetamaskLogged(true)
+            setIsMetamaskLogged(true)
             setStartClientAddress(res[0].slice(0,6))
             setEndClientAddress(res[0].slice(res[0].length - 4))
     })
