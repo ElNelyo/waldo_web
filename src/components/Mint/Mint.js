@@ -16,7 +16,7 @@ const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
 const [currentPrice, setCurrentPrice] = useState("");
 const [currentSupply, setcurrentSupply] = useState("");
-const contractAdress = "0xec2E638428087D23a5c3D33569Ef062950F2D7bA"
+const contractAdress = "0x54b69F7FE0F63D65269063C60D1d8879804b742b"
 
 if(isMetamaskLogged){
   const interval = setInterval(async function() {
@@ -127,7 +127,7 @@ return(
           </span>
         </div>
 
-    <div className='mx-auto text-center mt-96'>
+    <div className='mx-auto text-center mt-96 xl:mt-[450px]'>
       <button disabled={isMetamaskLogged ? false : true } onClick={handleMint}  type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center 2xl:px-32 px-12 py-6 border border-transparent shadow-sm text-xl font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500  ${isMetamaskLogged ? "" : "cursor-not-allowed"}`} >Mint Now
       </button>
       </div>

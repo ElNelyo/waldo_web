@@ -67,7 +67,7 @@ async function  scanWallet(Contract, account){
 const handleScan = async (e) => {
   const abi = ABI;
   const web3 = new Web3(Web3.givenProvider);
-  const contractAdress = '0xec2E638428087D23a5c3D33569Ef062950F2D7bA';
+  const contractAdress = '0x54b69F7FE0F63D65269063C60D1d8879804b742b';
   const Contract = new web3.eth.Contract(abi, contractAdress);
   const accounts = await window.ethereum.enable();
   const account = accounts[0];
@@ -78,7 +78,7 @@ const handleScan = async (e) => {
 };
 return (
 
-<div className='bg-gradient-to-r from-cyan-500 to-blue-500 bottom-0 h-full fixed top-0 left-0 w-full h-full pb-20'>
+<div className='bg-gradient-to-b from-purple-500 to-pink-500 bottom-0 h-full fixed top-0 left-0 w-full h-full pb-20'>
 <div className='text-center font-bold text-white pacifico pt-4 text-5xl title-green'>Get your promotion code</div>
 
 <div className="right-10 top-5 fixed">
@@ -118,7 +118,7 @@ return (
      </div>
 
 
-     <div className='text-white text-center'> 
+     <div className='text-white text-center 2xl:mt-36'> 
             { highestRank != "" ? `You own a ${highestRank}  NFT ! ` : <div></div>} 
      </div>
     
