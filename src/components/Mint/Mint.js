@@ -1,9 +1,7 @@
 import { useState, React } from 'react';
 import Web3 from 'web3';
 import ABI from './abi.json';
-import background_dino from '../../images/background_dino.png';
-import people_dino from '../../images/people_dino.png'
-import dino from '../../images/dino.png'
+import mint_image from '../../images/mint.png'
 import ReactFloaterJs from 'react-floaterjs'
 import { PlusIcon } from '@heroicons/react/solid'
 require('dotenv').config()
@@ -18,7 +16,7 @@ const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
 const [currentPrice, setCurrentPrice] = useState("");
 const [currentSupply, setcurrentSupply] = useState("");
-const contractAdress = "0x3d155Ac6FCcf3EA5d5AaacdF33D9fBf09Bb923eD"
+const contractAdress = "0xec2E638428087D23a5c3D33569Ef062950F2D7bA"
 
 if(isMetamaskLogged){
   const interval = setInterval(async function() {
@@ -88,18 +86,19 @@ const handleSubmit = (event) => {
 
 return(
 
-<div className='bg-gradient-to-r from-cyan-500 to-blue-500 bottom-0 h-full fixed top-0 left-0 w-full h-full pb-20'>
+<div> 
 
-<div className='text-center font-bold text-white pacifico pt-4 text-5xl title-green'>Get your waldos</div>
-    <div className='pb-20'>
-                    <div className='relative sm:mb-72 text-center pt-12 md:pb-10 2xl:pb-32 mx-auto w-full centered' >
-                        <img src={background_dino} className="w-full md:w-1/3 absolute rounded-3xl shadow-xl centered"></img>
-                        <ReactFloaterJs>
-                          <img src={dino} className="w-full md:w-1/3  mx-auto absolute rounded-3xl centered "></img>
-                        </ReactFloaterJs>
-                        <img src={people_dino} className="w-full md:w-1/3 mx-auto absolute rounded-3xl centered"></img>
-                    </div>
-        </div>
+
+<div className="absolute inset-0">
+                  <img
+                    className="h-full w-full object-cover xl:object-fill"
+                    src={mint_image}
+                    alt="People working on laptops"
+                  />
+                  <div className="absolute inset-0 mix-blend-multiply" />
+                </div>
+                
+<div className="relative">
 
 
         <div className="right-10 top-5 fixed">
@@ -115,7 +114,7 @@ return(
              </div>
                 : 
                 <div>
-                <button onClick={connectMetamask}type="button" className='inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-red-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 dark:ring-slate-200/20' >
+                <button onClick={connectMetamask}type="button" className='z-20 inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-red-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 dark:ring-slate-200/20' >
                         Connect Metamask
                     </button>
                     <span className="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
@@ -128,8 +127,8 @@ return(
           </span>
         </div>
 
-    <div className='mx-auto text-center  mt-12 '>
-      <button disabled={isMetamaskLogged ? false : true } onClick={handleMint}  type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center px-32 py-6 border border-transparent shadow-sm text-xl font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500  ${isMetamaskLogged ? "" : "cursor-not-allowed"}`} >Mint Now
+    <div className='mx-auto text-center mt-96'>
+      <button disabled={isMetamaskLogged ? false : true } onClick={handleMint}  type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center 2xl:px-32 px-12 py-6 border border-transparent shadow-sm text-xl font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500  ${isMetamaskLogged ? "" : "cursor-not-allowed"}`} >Mint Now
       </button>
       </div>
 
@@ -137,14 +136,15 @@ return(
       {isMetamaskLogged ? 
         
         
-        <div className='text-center text-white font-bold text-xl mt-4'>
+        <div className='text-center text-white font-bold text-xl mt-4 title-violet'>
 
-          <div>Current Price : {currentPrice} eth</div>
+          <div className='mb-6'>Current Price : {currentPrice} eth</div>
           <div>Current Supply : {currentSupply} / 4200</div>
         </div>
         : <div></div>
          }
 
+    </div>
   </div>
 
   

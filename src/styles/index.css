@@ -835,6 +835,10 @@ a {
   z-index: 10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -968,6 +972,14 @@ a {
 
 .mt-56 {
   margin-top: 14rem;
+}
+
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -1407,6 +1419,10 @@ a {
   object-fit: contain;
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -1470,9 +1486,9 @@ a {
   padding-bottom: 0.75rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-6 {
@@ -1699,6 +1715,10 @@ a {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
 }
 
 .shadow-xl {
@@ -2352,6 +2372,10 @@ a {
     display: inline;
   }
 
+  .xl\:object-fill {
+    object-fit: fill;
+  }
+
   .xl\:p-10 {
     padding: 2.5rem;
   }
@@ -2373,6 +2397,11 @@ a {
 
   .\32xl\:mt-44 {
     margin-top: 11rem;
+  }
+
+  .\32xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .\32xl\:pt-20 {

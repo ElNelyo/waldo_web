@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { InboxIcon, MapIcon, SparklesIcon } from '@heroicons/react/outline'
-import next from '../images/next.png'
+import mint from '../images/mint.png'
 import Zoom from 'react-reveal/Zoom';
 import { useTranslation } from 'react-i18next';
 
@@ -24,7 +24,7 @@ import { useTranslation } from 'react-i18next';
 
 
   <Zoom><div className='text-white text-center text-2xl mx-auto mb-12 indie'>{t("next_text_2")}</div></Zoom>
-     <Zoom><img src={next} className="w-full md:w-1/2 mx-auto rounded-3xl"></img></Zoom>
+     <Zoom><img src={mint} className="w-full md:w-1/2 mx-auto rounded-3xl"></img></Zoom>
     </div>
   )
 }
