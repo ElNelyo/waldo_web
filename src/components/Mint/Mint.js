@@ -16,7 +16,7 @@ const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
 const [currentPrice, setCurrentPrice] = useState("");
 const [currentSupply, setcurrentSupply] = useState("");
-const contractAdress = "0x54b69F7FE0F63D65269063C60D1d8879804b742b"
+const contractAdress = "0xfd05c93Ee7dad12bd8B81B17088800c1787C4F54"
 
 if(isMetamaskLogged){
   const interval = setInterval(async function() {
