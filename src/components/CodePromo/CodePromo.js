@@ -67,7 +67,7 @@ async function  scanWallet(Contract, account){
 const handleScan = async (e) => {
   const abi = ABI;
   const web3 = new Web3(Web3.givenProvider);
-  const contractAdress = '0xfd05c93Ee7dad12bd8B81B17088800c1787C4F54';
+  const contractAdress = '0xF97db018093f9AedCF12895De4a09FBD144D699F';
   const Contract = new web3.eth.Contract(abi, contractAdress);
   const accounts = await window.ethereum.enable();
   const account = accounts[0];
