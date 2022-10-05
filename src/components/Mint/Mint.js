@@ -16,6 +16,7 @@ const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
 const [currentPrice, setCurrentPrice] = useState("");
 const [currentSupply, setcurrentSupply] = useState("");
+const [NFTtoBuy, setNFTtoBuy] = useState(1);
 const contractAdress = "0x1C20acf90f08643B922Cd7Db7946663EE8fcC173"
 
 if(isMetamaskLogged){
@@ -49,16 +50,16 @@ const handleMint = async (e) => {
   const amount = currentPrice
   const priceFromSC = await Contract.methods.mintPrice().call();
   const gasPrice = await web3.eth.getGasPrice();
-  const functionGasFees = await Contract.methods.WaldosMint(1, account).estimateGas({value: priceFromSC});
+  const functionGasFees = await Contract.methods.WaldosMint(NFTtoBuy, account).estimateGas({value: priceFromSC});
   const finalGasPrice = Math.floor(1.10 * functionGasFees);
   
   try {
     const result = await Contract.methods
-      .WaldosMint(1, account)
+      .WaldosMint(NFTtoBuy, account)
       .send({
         from: account,
         gasLimit: finalGasPrice,
-        value: priceFromSC,
+        value: priceFromSC * NFTtoBuy,
       })
       .on('error', (error, receipt) => {
         alert('ERROR ' + error.message);
@@ -71,6 +72,22 @@ const handleMint = async (e) => {
   }
 };
 
+const buyOneMoreNFT = (event) => {
+  if(NFTtoBuy == 5){
+    setNFTtoBuy(5)
+  }else{
+    setNFTtoBuy(NFTtoBuy+1)
+  }
+ 
+}
+const buyOneLessNFT = (event) => {
+  if(NFTtoBuy == 1){
+    setNFTtoBuy(1)
+  }else{
+    setNFTtoBuy(NFTtoBuy-1)
+  }
+  
+}
 const handleSubmit = (event) => {
   //Prevent page reload
   event.preventDefault();
@@ -127,7 +144,13 @@ return(
           </span>
         </div>
 
-    <div className='mx-auto text-center mt-96 xl:mt-[450px]'>
+    <div className='mx-auto text-center mt-120 xl:mt-[360px]'>
+      <div className="flex flex-row justify-center mx-auto space-x-4">
+        <div onClick={buyOneLessNFT}  className='cursor-pointer border border-white rounded-lg bg-indigo-600 w-20 text-center h-12 mb-8 text-white font-bold mt-4 text-4xl'>-</div>
+         <div className='border border-white rounded-lg bg-indigo-600 w-28  text-center h-20 mb-8 text-white pt-4 font-bold text-4xl'>{NFTtoBuy}</div>
+         <div onClick={buyOneMoreNFT}  className='cursor-pointer border border-white rounded-lg bg-indigo-600 w-20  text-center h-12 mb-8 text-white  mt-4 font-bold text-4xl'>+</div>
+      </div>
+      
       <button disabled={isMetamaskLogged ? false : true } onClick={handleMint}  type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center 2xl:px-32 px-12 py-6 border border-transparent shadow-sm text-xl font-bold rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500  ${isMetamaskLogged ? "" : "cursor-not-allowed"}`} >Mint Now
       </button>
       </div>
@@ -139,7 +162,7 @@ return(
         <div className='text-center text-white font-bold text-xl mt-4 title-violet'>
 
           <div className='mb-6'>Current Price : {currentPrice} eth</div>
-          <div>Current Supply : {currentSupply} / 4200</div>
+          <div>Current Supply : {currentSupply} / 420</div>
         </div>
         : <div></div>
          }

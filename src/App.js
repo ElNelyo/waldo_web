@@ -44,7 +44,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home />}>
         </Route>
-        <Route exact path="/mint" element={<Mint />}>
+        <Route exact path="/mint-w4ld0s-0g-420" element={<Mint />}>
         </Route>
         <Route exact path="/promo" element={<CodePromo />}>
         </Route>
