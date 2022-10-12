@@ -12,8 +12,7 @@ export default function Genesis() {
   const hobbyFeatures = [t("genesis_text_5")]
 const scaleFeatures = [t("genesis_text_6")]
 const growthFeatures = [
-  [t("genesis_text_7")],
-  [t("genesis_text_8")]
+  [t("genesis_text_7")]
 ]
 
 
@@ -49,7 +48,7 @@ const growthFeatures = [
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
-                            <span className="font-extrabold text-orange-800">3700</span>
+                            <span className="font-extrabold text-orange-800">270</span>
                           </span>
                           <span className="text-xl font-medium text-gray-100">NFTs</span>
                         </div>
@@ -88,7 +87,7 @@ const growthFeatures = [
                       </h3>
                       <div className="mt-4 flex items-center justify-center">
                         <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100 sm:text-6xl">
-                          <span className="font-extrabold text-green-800">400</span>
+                          <span className="font-extrabold text-green-800">125</span>
                         </span>
                         <span className="text-2xl font-medium text-gray-100">NFTs</span>
                       </div>
@@ -124,7 +123,7 @@ const growthFeatures = [
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-100">
-                            <span className="font-extrabold text-pink-800">100</span>
+                            <span className="font-extrabold text-pink-800">25</span>
                           </span>
                           <span className="text-xl font-medium text-gray-100">NFTs</span>
                         </div>

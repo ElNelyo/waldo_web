@@ -13,7 +13,7 @@ export const TRANSLATIONS_FR =
   community_text_4:"Faire partie de la communauté, c'est tout simplement faire partie d'une famille. Pas un club, une confrérie et autres trucs bullshit, non. C'est trouver des amis, passionnés comme nous, qui ont envie de partager leurs passions, leurs envies, leurs visions. ",
 
   genesis_title: "GENESIS COLLECTION",
-  genesis_text_1:"La collections se compose de 4200 NFTs. 4200 uniques and super cool Waldos qui dès le premier palier de rareté offrent de nombreux avantages !",
+  genesis_text_1:"La collections se compose de 420 NFTs. 420 uniques and super cool Waldos qui dès le premier palier de rareté offrent de nombreux avantages !",
   genesis_text_2:"COMMUN",
   genesis_text_3:"RARE",
   genesis_text_4:"MYTHIQUE",
@@ -41,6 +41,8 @@ export const TRANSLATIONS_FR =
   utility_text_1:"Posséder un NFT vous permettra d'accéder à la partie réservée à la communauté sur la boutique en ligne THE WALDOS LEGEND et de pouvoir acheter facilement les meilleurs produits CBD à des prix imbattables ! Vous pourrez également acheter le merchandising réservé aux détenteurs.",
   utility_text_2:"Grâce à un Waldos NFT, vous pourrez bénéficier d'un accès limité à des événements qui vous seront réservés : Concerts musicaux, Festivals, Expositions, Rencontre de collectivités",
   utility_text_3:"Avec des partenaires solides et prometteurs, nous offrirons aux détenteurs un accès à des WL super cool et des cadeaux dans des projets incontournables de la blockchain ! Le choix des projets peut même être décidé en DAO par la communauté.",
+  utility_text_4:"Les Waldos ont aidé la communauté, ils méritent donc une récompense! 30% du marché secondaire NFT sera reversé aux holders. L'équivalent d'un pourcentage des bénéfices générés par les Shops Waldos seront reversés aux holders. Enfin, seuls les Waldos holders auront la possibilité d'ouvrir une franchise Waldos Legend.",
+
 
   distribution_text_title:"Distribution",
   distribution_text_1:"Nous voulons avoir une politique de transparence avec la communauté. Vous pouvez trouver un camembert détaillant la répartition des fonds récoltés grâce à la vente de la collection NFT.",

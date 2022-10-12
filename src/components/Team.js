@@ -37,14 +37,7 @@ import { useTranslation } from 'react-i18next';
           twitterUrl: '#',
           instagramUrl:""
       },
-      {
-        name: 'JPHI',
-        role: 'Advisor',
-        imageUrl:jphi,
-        bio: t("team_text_4"),
-        twitterUrl: 'https://twitter.com/jpchedy',
-        instagramUrl:""
-      },
+    
       {
         name: 'Nelyo',
         role: 'Friends',

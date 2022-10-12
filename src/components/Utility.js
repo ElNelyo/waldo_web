@@ -30,7 +30,13 @@ export default function Utility() {
       description:
         t('utility_text_3'),
       icon: CashIcon,
-    }
+    },
+    {
+      name: 'Rewards & Franchise Partnership',
+      description:
+        t('utility_text_4'),
+      icon: GlobeAltIcon,
+    },
   ]
 
   
@@ -55,7 +61,7 @@ export default function Utility() {
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <Zoom>
-                  <p className="ml-16 text-4xl pt-2 leading-6 font-bold font-medium text-orange-400 uppercase">{feature.name}</p>
+                  <p className="ml-16 text-4xl pt-3 leading-6 font-bold font-medium text-orange-400 uppercase">{feature.name}</p>
                   </Zoom>
                 </dt>
                 <Zoom>
