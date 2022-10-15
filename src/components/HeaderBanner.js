@@ -57,7 +57,7 @@ export default function HeaderBanner() {
             type="button"
             className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            READ WALLPAPER
+            READ WHITEPAPER
           </button> 
         </a>
       </div> 
