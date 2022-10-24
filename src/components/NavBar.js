@@ -105,9 +105,9 @@ export default function Example() {
                   <a href='https://discord.gg/4jYmvufSFT' target="_blank">
                   <button
                     type="button"
-                    className="relative indie inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                    className="relative indie inline-flex items-center px-2 py-1 xl:px-4 xl:py-2  border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                   >
-                    <PlusSmIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
+                    <PlusSmIcon className="-ml-1 mr-2 h-2 w-2 xl:h-5 xl:w-5" aria-hidden="true" />
                     <span>JOIN DISCORD</span>
                   </button>
                   </a>
@@ -118,9 +118,9 @@ export default function Example() {
                   <a href='https://shop.waldoslegend.com/' target="_blank">
                   <button
                     type="button"
-                    className="relative indie inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                    className="relative indie inline-flex items-center px-2 py-1 xl:px-4 xl:py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
                   >
-                    <ShoppingBagIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
+                    <ShoppingBagIcon className="-ml-1 mr-2 h-2 w-2 xl:h-5 xl:w-5" aria-hidden="true" />
                     <span>SHOP</span>
                   </button>
                   </a>
