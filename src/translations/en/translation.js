@@ -32,7 +32,7 @@ export const TRANSLATIONS_EN =
   benefits_text_6:"But also merchandising such as:",
   benefits_text_7:"A WALDOS brand, Hoodies, Tshirts, hats, etc.",
   benefits_text_8:"Accessories, lighters, grinders, stickers, ect",
-  benefits_text_9:"And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 30% to 50% discount on all CBD products.",
+  benefits_text_9:"And above all, Waldos aurton attractive prices depending on the rarity of their NFT ranging from 30% to 50% discount on all CBD flower and hash.",
 
   DAO_text_1:"The involvement of the Waldos is very important: being the holder of a Waldos will allow its owner to be able to give his opinion and influence the direction of THE WALDOS LEGEND project.",
   DAO_text_2:"The Waldos will be able to decide on the desired events for partnerships, collaborations. They will be able to decide on future projects: play 2 earn, second NFT collection, choice of variety of products for the community, etc.",

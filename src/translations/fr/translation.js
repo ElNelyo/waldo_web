@@ -31,7 +31,7 @@ export const TRANSLATIONS_FR =
   benefits_text_6:"Mais également du merchandising comme:",
   benefits_text_7:"La marque THE WALDOS LEGEND, Hoodies, Tshirts, bonnets, etc.",
   benefits_text_8:"Accessoires, briquets, grinders, stickers, ect",
-  benefits_text_9:"Et par dessus tout, Les Waldos auront des prix attractifs qui dépendront de la rareté de leur BFT, de 30% à 50% de réduction sur les produits CBD.",
+  benefits_text_9:"Et par dessus tout, Les Waldos auront des prix attractifs qui dépendront de la rareté de leur BFT, de 30% à 50% de réduction sur les fleurs et résines CBD.",
 
   DAO_text_1:"L'engagement des Waldos est très important pour nous: être titulaire d'un Waldos permettra à son propriétaire de pouvoir donner son avis et influencer l'orientation du projet THE WALDOS LEGEND.",
   DAO_text_2:"Les Waldos pourront décider des événements souhaités pour les partenariats, les collaborations. Ils pourront décider des futurs projets : play 2 earn, deuxième collection NFT, choix de variété de produits pour la communauté, etc.",

@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import { BellIcon, MenuIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
 import { PlusSmIcon } from '@heroicons/react/solid'
 import i18n from "../translations/i18n";
 import ReactCountryFlag from "react-country-flag"
@@ -113,6 +113,20 @@ export default function Example() {
                   </a>
                 </div>
                
+
+                <div className="flex-shrink-0 ml-2">
+                  <a href='https://shop.waldoslegend.com/' target="_blank">
+                  <button
+                    type="button"
+                    className="relative indie inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                  >
+                    <ShoppingBagIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
+                    <span>SHOP</span>
+                  </button>
+                  </a>
+                </div>
+
+
               </div>
             </div>
           </div>
