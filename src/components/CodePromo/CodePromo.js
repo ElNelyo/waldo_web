@@ -11,12 +11,15 @@ const axios = require('axios');
 
 
 function CodePromo(){
+const [isLoading, setIsLoading] = useState(false);
+const [scannId, setScanId] = useState("");
+const [maxSupply, setMaxSupply] = useState(0);
 const [isMetamaskLogged, setIsMetamaskLogged] = useState(false);
 const [clientAddress, setClientAddress] = useState("");
 const [startClientAddress, setStartClientAddress] = useState("");
 const [endClientAddress, setEndClientAddress] = useState("");
 const [highestRank, setHighestRank] = useState("");
-
+const [code, setCode] = useState("");
 
 const connectMetamask = async (e) => {
     window.ethereum.request({method:'eth_requestAccounts'})
@@ -32,11 +35,18 @@ const connectMetamask = async (e) => {
 async function  scanWallet(Contract, account){
     const owned = await Contract.methods.balanceOf(account).call();
     const maxSupply = await Contract.methods.totalSupply().call();
+    setMaxSupply(maxSupply-1);
     let maxRank = null
     if(owned > 0 ){
     maxRank = "Common"
       for(let i=0; i<maxSupply; i++){
+        let newDate = new Date()
+        let day = newDate.getDate();
+        let month = newDate.getMonth() + 1;
+        let year = newDate.getFullYear();
+
           const nftScanner = await Contract.methods.ownerOf(i).call()
+          setScanId(i);
           if(String(nftScanner).toLowerCase()==String(account).toLowerCase()){
               const json = await Contract.methods.tokenURI(i).call();
               const res = await axios.get(json);
@@ -44,15 +54,18 @@ async function  scanWallet(Contract, account){
               if(type=="Common"){
                   if(maxRank != "Mythic" && maxRank != "Rare" ){
                     maxRank = "Common";
+                    setCode((12967*day+month-year)-(420*day));
                   }
               }
               if(type=="Rare"){
                   if(maxRank != "Mythic"){
                     maxRank= "Rare";
+                    setCode((89067*day+month-year)-(420*day));
                   }
               }
               if(type=="Mythic"){
                 maxRank  = "Mythic";
+                setCode((14925*day+month-year)-(420*day));
               }
               
           }
@@ -72,8 +85,8 @@ const handleScan = async (e) => {
   const accounts = await window.ethereum.enable();
   const account = accounts[0];
 
+  setIsLoading(true);
   const rank = await scanWallet(Contract, account);
-  console.log(rank)
   setHighestRank(rank)
 };
 return (
@@ -119,12 +132,34 @@ return (
 
 
      <div className='text-white text-center 2xl:mt-36'> 
-            { highestRank != "" ? `You own a ${highestRank}  NFT ! ` : <div></div>} 
+            {isLoading ? 
+              <div>
+                <div className='text-white font-bold'>Scanning {scannId}/{maxSupply}</div>
+                  <div className='font-bold text-4xl text-white title-green'>
+                  {(() => {
+                    if (highestRank =="Common") {
+                      return (<div className>COM{code}</div>)
+                    }
+                    if (highestRank =="Rare") {
+                      return (<div>RAR{code}</div>)
+                    }
+                    if (highestRank =="Mythic") {
+                      return (<div>MYT+{code}</div>)
+                    }
+
+                  })()}
+                      
+                  </div>
+                </div>
+              
+            : 
+            <div></div>
+      }
      </div>
     
 
-    <div className='mx-auto text-center mt-56'>
-        
+    <div className='mx-auto text-center mt-48'>
+  
       <button disabled={isMetamaskLogged ? false : true } onClick={handleScan} type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isMetamaskLogged ? "" : "cursor-not-allowed"}`}>
          Scan Wallet
       </button>

@@ -70,6 +70,7 @@ export default function HeaderBanner() {
                  
               </h1>
 
+
               <div className='text-white indie'>
                   <div className='text-white indie text-2xl'>{t("header_banner_text_1")}</div>
                 
@@ -97,6 +98,27 @@ export default function HeaderBanner() {
                 </div>
             </div>
             
+            <div className='text-center z-10 mx-auto justify-center flex flex-center md:mt-32 mt-72 mb-20'>
+                <a href='https://opensea.io/collection/the-waldos-legend' target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    >
+                      OPENSEA COLLECTION 
+                    </button> 
+                  </a>
+
+                  <a href='https://www.waldoslegend.com/mint' target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                    >
+                      MINT NFT
+                    </button> 
+                  </a>
+
+                </div> 
+
          </div>
         </div>
       </div>
