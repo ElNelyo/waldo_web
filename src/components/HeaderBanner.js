@@ -52,14 +52,6 @@ export default function HeaderBanner() {
     <div className="bg-gradient-to-r from-violet-900 to-blue-500 md:mt-72 2xl:mt-[600px] sm:mt-72 w-full block pb-32" id='genesis'>
 
     <div className='text-center absolute z-10 mx-auto justify-center left-[25%] md:left-[45%] md:mt-72 2xl:mt-44 mt-32'>
-      <a href='https://gael-avida.gitbook.io/the-waldos-legend-whitepaper/' target="_blank">
-          <button
-            type="button"
-            className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          >
-            READ WHITEPAPER
-          </button> 
-        </a>
       </div> 
       <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
         <div className="flex flex-col">
@@ -69,6 +61,35 @@ export default function HeaderBanner() {
                   The Waldos Legend
                  
               </h1>
+
+              <div className='text-center z-10 mx-auto justify-center flex flex-center mt-12 mb-20'>
+                <a href='https://opensea.io/collection/the-waldos-legend' target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    >
+                      OPENSEA COLLECTION 
+                    </button> 
+                  </a>
+
+                  <a href='https://www.waldoslegend.com/mint' target="_blank">
+                    <button
+                      type="button"
+                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                    >
+                      MINT NFT
+                    </button> 
+                  </a>
+                  <a href='https://gael-avida.gitbook.io/the-waldos-legend-whitepaper/' target="_blank">
+                  <button
+            type="button"
+            className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          > 
+                  READ WHITEPAPER
+                  </button>
+                  </a>
+
+                </div> 
 
 
               <div className='text-white indie'>
@@ -97,27 +118,7 @@ export default function HeaderBanner() {
                     <img src={people_dino} className="w-full md:w-1/2 mx-auto absolute rounded-3xl centered"></img>
                 </div>
             </div>
-            
-            <div className='text-center z-10 mx-auto justify-center flex flex-center md:mt-32 mt-72 mb-20'>
-                <a href='https://opensea.io/collection/the-waldos-legend' target="_blank">
-                    <button
-                      type="button"
-                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    >
-                      OPENSEA COLLECTION 
-                    </button> 
-                  </a>
-
-                  <a href='https://www.waldoslegend.com/mint' target="_blank">
-                    <button
-                      type="button"
-                      className="inline-flex items-center px-4 md:px-12 md:py-3 py-1 border border-transparent text-sm md:text-base font-medium rounded-full shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
-                    >
-                      MINT NFT
-                    </button> 
-                  </a>
-
-                </div> 
+          
 
          </div>
         </div>
