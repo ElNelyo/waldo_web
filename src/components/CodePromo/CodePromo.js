@@ -144,7 +144,7 @@ return (
                       return (<div>RAR{code}</div>)
                     }
                     if (highestRank =="Mythic") {
-                      return (<div>MYT+{code}</div>)
+                      return (<div>MYT{code}</div>)
                     }
 
                   })()}
