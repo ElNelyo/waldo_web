@@ -122,11 +122,11 @@ return (
   </div>
     <div className='pb-12'>
         <div className='relative sm:mb-72 text-center pt-12 md:pb-10 2xl:pb-32 mx-auto w-full centered' >
-            <img src={background_dino} className="w-full md:w-1/3 absolute rounded-3xl shadow-xl centered"></img>
+            <img src={background_dino} className="w-full md:w-1/4 absolute rounded-3xl shadow-xl centered"></img>
             <ReactFloaterJs>
-                <img src={dino} className="w-full md:w-1/3  mx-auto absolute rounded-3xl centered "></img>
+                <img src={dino} className="w-full md:w-1/4  mx-auto absolute rounded-3xl centered "></img>
             </ReactFloaterJs>
-            <img src={people_dino} className="w-full md:w-1/3 mx-auto absolute rounded-3xl centered"></img>
+            <img src={people_dino} className="w-full md:w-1/4 mx-auto absolute rounded-3xl centered"></img>
         </div>
      </div>
 
@@ -158,7 +158,7 @@ return (
      </div>
     
 
-    <div className='mx-auto text-center mt-48'>
+    <div className='mx-auto text-center b-20'>
   
       <button disabled={isMetamaskLogged ? false : true } onClick={handleScan} type="button" className={`inline-flex items-center text-center justify-center mx-auto justify-center block flex flex-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isMetamaskLogged ? "" : "cursor-not-allowed"}`}>
          Scan Wallet
