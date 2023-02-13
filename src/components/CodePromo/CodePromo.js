@@ -131,7 +131,7 @@ return (
      </div>
 
 
-     <div className='text-white text-center 2xl:mt-36'> 
+     <div className='text-white text-center mt-72 md:mt-36 2xl:mt-36'> 
             {isLoading ? 
               <div>
                 <div className='text-white font-bold'>Scanning {scannId}/{maxSupply}</div>
@@ -160,7 +160,7 @@ return (
 
     <div className='mx-auto text-center b-20'>
   
-      <button disabled={isMetamaskLogged ? false : true } onClick={handleScan} type="button" className={`inline-flex mt-72 md:mt-0 items-center text-center justify-center mx-auto justify-center block flex flex-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isMetamaskLogged ? "" : "cursor-not-allowed"}`}>
+      <button disabled={isMetamaskLogged ? false : true } onClick={handleScan} type="button" className={`inline-flex mt-42 md:mt-0 items-center text-center justify-center mx-auto justify-center block flex flex-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${isMetamaskLogged ? "" : "cursor-not-allowed"}`}>
          Scan Wallet
       </button>
       </div>
